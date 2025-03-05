@@ -55,7 +55,7 @@ Skills
 
 Scholastic Achievements
 ======
-*Secured an All India Rank 328 among 11,902 applicants in IIT JAM 2017, for the admission to the M.Sc. program at Indian Institute of Technology Delhi
+* Secured an All India Rank 328 among 11,902 applicants in IIT JAM 2017, for the admission to the M.Sc. program at Indian Institute of Technology Delhi
 * Qualified CSIR-NET(LS) December 2019 with a Percentile Score of 96.388
 * Secured an All India Rank 547 among 16,990 applicants in GATE 2020
 * Secured an All India Rank 320 in JEST Physics 2020 with a Percentile Score of 95.61
