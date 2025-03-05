@@ -1,8 +1,10 @@
 ---
 title: "Effect of Minority Composition in a Binary Glass Forming Liquids"
+collection: publications
 category: conferences
 author: "Sandeep Kushawah, Shubhanjali Pathak, Prasanth P. Jose"
-year: "2023"
+date: 2025-01-28
+year: "2025"
 journal: "AIP Conference Proceedings"
 link: "https://pubs.aip.org/aip/acp/article/3198/1/020050/3332705/Effect-of-minority-composition-in-a-binary-glass"
 citation: 'Sandeep Kushawah, Shubhanjali Pathak, Prasanth P. Jose. (2025). &quot;Effect of Minority Composition in a Binary Glass Forming Liquids.&quot; <i>AIP Conference Proceedings</i>.'
