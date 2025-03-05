@@ -30,7 +30,7 @@ Research Experience
   * Studied protein aggregation related to neurodegenerative diseases.
   * Used POV-Ray for visualization.
 
-* Mini Project (Jan 2019-June 2019)
+* Master's Mini Project (Jan 2019-June 2019)
   * Indian Institute of Technology Delhi
   * Supervisor: Dr. Vikrant Saxena, IIT Delhi
   * Simulated plasma in a cylindrical chamber using a particle-in-cell model.
@@ -53,20 +53,27 @@ Skills
 * Operating Systems: Microsoft Windows, Linux (CentOS, Ubuntu)
 * HPC & Computational Tools: SLURM, PBS, Bash Scripting, VMD, POV-Ray
 
-Achievements & Certifications
+Scholastic Achievements
 ======
-* Best Poster Award – National Science Day 2024, IIT Mandi
-* AIR 328 (IIT JAM 2017) – Admission to IIT Delhi M.Sc. Physics program
-* CSIR-NET (LS) 2019 – Percentile: 96.388
-* AIR 547 (GATE 2020)
-* AIR 320 (JEST Physics 2020) – Percentile: 95.61
+*Secured an All India Rank 328 among 11,902 applicants in IIT JAM 2017, for the admission to the M.Sc. program at Indian Institute of Technology Delhi
+* Qualified CSIR-NET(LS) December 2019 with a Percentile Score of 96.388
+* Secured an All India Rank 547 among 16,990 applicants in GATE 2020
+* Secured an All India Rank 320 in JEST Physics 2020 with a Percentile Score of 95.61
+* Best Poster Award on the occasion of “National Science Day 2024", Indian Institute of Technology,Mandi, India
+
+Certifications
+======
+* Webinar on Science Communication, EURAXESS, Oct 2023
+* Space Science and Technology Awareness Training (START), ISRO, Sep 2023
+* MATLAB Onramp, MathWorks (verified cert.), Feb 2022
+* Scientific Writing Workshop, ACS Publications, Sep 2021
 
 Conferences & Workshops
 ======
-*Bangalore School on Statistical Physics – XIV (ICTS & RRI)
-*67th DAE Solid State Physics Symposium (BARC Mumbai, India)
-*Bangalore School on Statistical Physics – XV (ICTS & RRI)
-*68th DAE Solid State Physics Symposium (BARC Mumbai, India)
+* Attended “Bangalore School on Statistical Physics – XIV” organized jointly by the International Centre for Theoretical Sciences (ICTS) and the Raman Research Institute (RRI).
+* Presented poster at the “67th DAE Solid State Physics Symposium” organized by Bhabha Atomic Research Centre, Mumbai, India.
+* Attended “Bangalore School on Statistical Physics – XV” organized jointly by the International Centre for Theoretical Sciences (ICTS) and the Raman Research Institute (RRI).
+* Presented poster at the “68th DAE Solid State Physics Symposium” organized by Bhabha Atomic Research Centre, Mumbai, India.
 
 Publications
 ======
