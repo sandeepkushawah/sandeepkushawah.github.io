@@ -25,7 +25,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Sandeep Kushawah"
   pronouns         : # example: "she/her"  
-  bio              : "I am Sandeep Kushawah, a PhD student at IIT Mandi working in soft condensed matter physics."
+  bio              : " I am a Ph.D. student at IIT Mandi, researching the glass transition in supercooled liquids using molecular dynamics simulations."
   location         : "India"
   employer         : "Indian Institute of Technology Mandi"
   uri              : # URL
@@ -35,9 +35,9 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=2SUAJIwAAAAJ&hl=en"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : #"http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
