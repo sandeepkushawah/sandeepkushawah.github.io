@@ -22,6 +22,6 @@ Over the course of my Ph.D., I have contributed to several publications related 
 Contact
 ======
 Feel free to explore my publications, research, and teaching experience through the links above. You can contact me via email or through my LinkedIn profile for collaboration or inquiries.
-* Email: [sandeep.kushawah@outlook.com](sandeep.kushawah@outlook.com)
+* Email: sandeep.kushawah@outlook.com
 * LinkedIn: [linkedin.com/in/sandeep-kushawah](https://linkedin.com/in/sandeep-kushawah)
 
