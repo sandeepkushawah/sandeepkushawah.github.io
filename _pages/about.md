@@ -1,27 +1,32 @@
 ---
 permalink: /
-title: "Welcome to My Research Page!"
+title: "Sandeep Kushawah"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am Sandeep Kushawah, a Ph.D. student at the Indian Institute of Technology, Mandi (IIT Mandi), specializing in Soft Condensed Matter Physics. My research primarily focuses on simulation of glass transition phenomena in binary mixtures, particularly studying the dynamics of mobile and immobile particles in supercooled liquids using Molecular Dynamics (MD) simulations.
+I am a Ph.D. student at the [Indian Institute of Technology Mandi](https://www.iitmandi.ac.in/), specializing in Soft Condensed Matter Physics. My research focuses on the glass transition in supercooled liquids, studied through Molecular Dynamics (MD) simulations.
 
-Research Interests
-======
-My work explores the underlying mechanisms of glass formation and the role of structural heterogeneity in materials at different densities. Through the Kob-Andersen (KA) binary Lennard-Jones mixture model, I investigate the dynamic behavior of mobile clusters, strings, and particle interactions in supercooled liquids. Understanding these properties is crucial for advancing the design of new materials with improved stability and performance.
+## Research Interests
 
-I also study mobile and immobile clusters, analyzing their formation and the relationship between structural properties and dynamical behavior. By modeling these systems, I aim to uncover the principles behind the glass transition—a phase transition that has important implications for various fields like material science, polymers, and bio-molecular systems.
+My work explores the structural and dynamic origins of glass formation in binary mixtures, particularly the Kob-Andersen (KA) binary Lennard-Jones system. I investigate:
 
-Publications & Contributions
-======
-Over the course of my Ph.D., I have contributed to several publications related to the dynamics of supercooled liquids and glass transition phenomena. My research has been presented at conferences, including the 67th DAE Solid State Physics Symposium, and I have been awarded for my work, including the Best Poster Award at National Science Day 2024.
+- **Dynamic heterogeneity** — formation and evolution of mobile and immobile particle clusters
+- **Structural correlations** — how local structure (radial distribution function, Debye-Waller factor, local density) relates to slow relaxation
+- **Composition effects** — how minority species concentration alters glass-forming ability
 
-Contact
-======
-Feel free to explore my publications, research, and teaching experience through the links above. You can contact me via email or through my LinkedIn profile for collaboration or inquiries.
-* Email: sandeep.kushawah@outlook.com
-* LinkedIn: [linkedin.com/in/sandeep-kushawah](https://linkedin.com/in/sandeep-kushawah)
+Understanding these properties has broad implications for material science, polymer physics, and bio-molecular systems.
 
+## Publications & Recognition
+
+I have authored publications in *AIP Conference Proceedings* on topics including composition effects in binary glass-formers and the structural origins of density relaxation. My work has been presented at the **67th and 68th DAE Solid State Physics Symposia**, and I received the **Best Poster Award at National Science Day 2024** at IIT Mandi.
+
+## Contact
+
+Feel free to explore my [publications](/publications/), [CV](/cv/), and [teaching](/teaching/) through the links above.
+
+- **Email:** [sandeep.kushawah@outlook.com](mailto:sandeep.kushawah@outlook.com)
+- **LinkedIn:** [linkedin.com/in/sandeep-kushawah](https://linkedin.com/in/sandeep-kushawah)
+- **Google Scholar:** [scholar.google.com](https://scholar.google.com/citations?user=2SUAJIwAAAAJ&hl=en)

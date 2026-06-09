@@ -95,4 +95,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* HPC Administration Team, IIT Mandi (July 2021 – July 2023): Managed user accounts and assisted users with software installations on the HPC cluster.
