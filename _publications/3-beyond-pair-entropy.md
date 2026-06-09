@@ -1,7 +1,7 @@
 ---
 title: "Beyond Pair Entropy: Orientational Many-Body Correlations in Supercooled Glass-Forming Liquids from a Four-Point Structural Entropy"
 collection: publications
-category: Journal Articles
+category: manuscripts
 author: "Sandeep Kushawah, Devansu Chakraborty, Prasanth P. Jose"
 date: 2026-06-08
 journal: "Soft Matter"
