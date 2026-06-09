@@ -9,6 +9,8 @@ redirect_from:
 
 I am a Ph.D. student at the [Indian Institute of Technology Mandi](https://www.iitmandi.ac.in/), specializing in Soft Condensed Matter Physics. My research focuses on the glass transition in supercooled liquids, studied through Molecular Dynamics (MD) simulations.
 
+![Glass transition schematic: Normal Liquid, Supercooled Liquid, and Glass states](/images/fig1_glass_states.png)
+
 ## Research Interests
 
 My work explores the structural and dynamic origins of glass formation in binary mixtures, particularly the Kob-Andersen (KA) binary Lennard-Jones system. I investigate:
@@ -18,6 +20,8 @@ My work explores the structural and dynamic origins of glass formation in binary
 - **Composition effects** — how minority species concentration alters glass-forming ability
 
 Understanding these properties has broad implications for material science, polymer physics, and bio-molecular systems.
+
+![MD simulation animation: particle dynamics across the glass transition](/images/anim1_glass_transition.gif)
 
 ## Publications & Recognition
 
