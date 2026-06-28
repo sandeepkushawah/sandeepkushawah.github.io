@@ -1,0 +1,53 @@
+{% include base_path %}
+<footer class="site-footer" id="contact-footer">
+  <div class="container">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        {{ site.author.name }}
+        <span>Computational soft matter · statistical physics of the glass transition</span>
+      </div>
+      <div class="site-footer__social">
+        <a href="mailto:{{ site.author.email }}" aria-label="Email"><i class="ti ti-mail" aria-hidden="true"></i></a>
+        {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ti ti-school" aria-hidden="true"></i></a>{% endif %}
+        {% if site.author.orcid %}<a href="https://orcid.org/{{ site.author.orcid }}" target="_blank" rel="noopener" aria-label="ORCID"><i class="ti ti-id-badge-2" aria-hidden="true"></i></a>{% endif %}
+        {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="ti ti-brand-github" aria-hidden="true"></i></a>{% endif %}
+        {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>{% endif %}
+      </div>
+    </div>
+    <div class="site-footer__legal">
+      <span>© <span id="year">2026</span> {{ site.author.name }}. Built with Jekyll, hosted on GitHub Pages.</span>
+      <span>
+        {% if site.goatcounter_code %}
+          <a href="https://{{ site.goatcounter_code }}.goatcounter.com" target="_blank" rel="noopener" title="Site statistics (privacy-friendly)">
+            <span id="visit-count" data-goatcounter-visits>·</span> visits
+          </a> ·
+        {% endif %}
+        <a href="{{ base_path }}/sitemap.xml">Sitemap</a> ·
+        <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID {{ site.author.orcid }}</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+  <button class="lightbox__close" aria-label="Close">&times;</button>
+  <div class="lightbox__content"></div>
+</div>
+
+<script src="{{ base_path }}/assets/js/site.js?v=1" defer></script>
+
+{% if site.goatcounter_code %}
+<!-- GoatCounter: privacy-friendly, cookieless analytics -->
+<script>
+  window.goatcounter = { no_onload: false };
+  document.addEventListener("DOMContentLoaded", function(){
+    fetch("https://{{ site.goatcounter_code }}.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
+      .then(function(r){ return r.json(); })
+      .then(function(d){ var el = document.querySelector("[data-goatcounter-visits]"); if (el && d && d.count) el.textContent = d.count; })
+      .catch(function(){});
+  });
+</script>
+<script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+{% endif %}

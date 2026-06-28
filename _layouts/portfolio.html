@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" data-theme="light">
+<head>
+  {% include modern-head.html %}
+</head>
+<body>
+  {% include modern-nav.html %}
+  {% include base_path %}
+  <main id="main">
+    <section class="page-hero">
+      <div class="container" style="max-width:860px">
+        {% if page.tag %}<p class="eyebrow" style="color:var(--teal-300)">{{ page.tag }}</p>{% endif %}
+        <h1 style="font-size:clamp(1.7rem,4vw,2.5rem)">{{ page.title }}</h1>
+        {% if page.summary %}<p style="margin-top:.6rem">{{ page.summary }}</p>{% endif %}
+        <div style="margin-top:1.2rem"><a class="btn btn--ghost" href="{{ base_path }}/portfolio/"><i class="ti ti-arrow-left" aria-hidden="true"></i> All projects</a></div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:clamp(2.2rem,5vw,3rem)">
+      <div class="container">
+        <div class="prose" style="max-width:800px">{{ content }}</div>
+      </div>
+    </section>
+  </main>
+  {% include modern-footer.html %}
+</body>
+</html>

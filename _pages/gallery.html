@@ -1,0 +1,34 @@
+---
+layout: page-modern
+title: "Research Gallery"
+eyebrow: "Simulations, made visible"
+subtitle: "Snapshots, figures, and animations from my molecular dynamics simulations of supercooled glass-forming liquids. Click any tile to view it full-size."
+permalink: /gallery/
+description: "A visual gallery of molecular dynamics simulation snapshots, cluster animations, and structural figures by Sandeep Kushawah."
+---
+
+{% include base_path %}
+
+{% for section in site.data.gallery %}
+<div class="gal-section reveal">
+  <div class="gal-section__head">
+    <h2>{{ section.title }}</h2>
+    <p>{{ section.desc }}</p>
+  </div>
+  <div class="ggrid">
+    {% for item in section.items %}
+    <figure class="gcard">
+      <a class="gcard__media" href="#" data-lightbox="{{ base_path }}{{ item.src }}"{% if item.type == 'video' %} data-lb-type="video"{% endif %} aria-label="View: {{ item.title }}">
+        <img loading="lazy" src="{{ base_path }}{{ item.poster }}" alt="{{ item.title }} — {{ item.desc }}">
+        {% if item.type == 'gif' %}<span class="gcard__badge">Animation</span>{% elsif item.type == 'video' %}<span class="gcard__badge">Video</span>{% endif %}
+        {% if item.type == 'gif' or item.type == 'video' %}<span class="gcard__play"><span><i class="ti ti-player-play" aria-hidden="true"></i></span></span>{% endif %}
+      </a>
+      <figcaption class="gcard__cap">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.desc }}</p>
+      </figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}

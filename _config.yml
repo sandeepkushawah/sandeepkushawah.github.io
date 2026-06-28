@@ -17,6 +17,11 @@ url                      : https://sandeepkushawah.github.io # the base hostname
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sandeepkushawah/sandeepkushawah.github.io"
 
+# Privacy-friendly visitor analytics (GoatCounter). Create a free account at
+# https://www.goatcounter.com/ and put your site code here (e.g. "sandeepkushawah"
+# if your dashboard is sandeepkushawah.goatcounter.com). Leave blank to disable.
+goatcounter_code         : ""
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -29,13 +34,13 @@ author:
   location         : "India"
   employer         : "Indian Institute of Technology Mandi"
   uri              : # URL
-  email            : "d20064@students.iitmandi.ac.in" 
+  email            : "sandeep.kushawah@outlook.com"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=2SUAJIwAAAAJ&hl=en"
   impactstory      : # URL
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : "0009-0003-5052-4398"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
@@ -158,6 +163,7 @@ include:
   - _pages
   - files
 exclude:
+  - "preview-*.html"
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -261,27 +267,22 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+      layout: publication
+      author_profile: false
   # _portfolio
   - scope:
       path: ""
       type: portfolio
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+      layout: portfolio
+      author_profile: false
   # _talks
   - scope:
       path: ""
       type: talks
     values:
       layout: talk
-      author_profile: true
-      share: true
+      author_profile: false
 
 
 # Sass/SCSS

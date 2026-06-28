@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" data-theme="light">
+<head>
+  {% include modern-head.html %}
+</head>
+<body>
+  {% include modern-nav.html %}
+
+  <main id="main">
+
+  <!-- ============================ HERO ============================ -->
+  <header class="hero" id="top">
+    <canvas class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <span class="hero__avail"><span class="dot" aria-hidden="true"></span> Seeking postdoctoral positions · 2026</span>
+        <h1>Sandeep Kushawah</h1>
+        <p class="hero__role">Computational soft-matter physicist <span class="inst">· Ph.D. candidate, IIT Mandi</span></p>
+        <p class="hero__mission">Decoding how liquids freeze into glass — connecting local atomic packing to slow, heterogeneous dynamics through large-scale molecular dynamics.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="{{ base_path }}/files/Sandeep_Kushawah_CV.pdf"><i class="ti ti-download" aria-hidden="true"></i> Download CV</a>
+          <a class="btn btn--ghost" href="{{ base_path }}/publications/"><i class="ti ti-article" aria-hidden="true"></i> Publications</a>
+          <a class="btn btn--ghost" href="#research"><i class="ti ti-atom-2" aria-hidden="true"></i> Research</a>
+          <a class="btn btn--ghost" href="#contact"><i class="ti ti-mail" aria-hidden="true"></i> Contact</a>
+        </div>
+        <div class="hero__social">
+          <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ti ti-school" aria-hidden="true"></i></a>
+          <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank" rel="noopener" aria-label="ORCID"><i class="ti ti-id-badge-2" aria-hidden="true"></i></a>
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="ti ti-brand-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:{{ site.author.email }}" aria-label="Email"><i class="ti ti-mail" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="hero__portrait">
+        <img src="{{ base_path }}/images/profile.jpg" width="300" height="300"
+             alt="Portrait of Sandeep Kushawah" fetchpriority="high">
+      </div>
+    </div>
+    <a class="scroll-cue" href="#stats" aria-label="Scroll to content"><i class="ti ti-chevron-down" aria-hidden="true"></i></a>
+  </header>
+
+  <!-- ============================ STATS ============================ -->
+  <section class="section" id="stats" style="padding-top:clamp(2.5rem,6vw,4rem);padding-bottom:0;">
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat"><div class="stat__num" data-count="3">0</div><div class="stat__label">Publications</div></div>
+        <div class="stat"><div class="stat__num" data-count="1" data-suffix="*">0</div><div class="stat__label">First-author paper</div></div>
+        <div class="stat"><div class="stat__num" data-count="4">0</div><div class="stat__label">Conferences &amp; schools</div></div>
+        <div class="stat"><div class="stat__num" data-count="5" data-suffix="+">0</div><div class="stat__label">Years HPC computing</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ RESEARCH / INTERESTS ============================ -->
+  <section class="section" id="research">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Research focus</p>
+        <h2 class="section-title">Why does a cooling liquid get stuck?</h2>
+        <p>When a liquid is cooled fast enough to dodge crystallization, its dynamics slow by more than ten orders of magnitude while its structure barely changes — the glass transition. I build large-scale molecular dynamics simulations of model binary mixtures and develop new structural and entropy-based order parameters to explain <em>where</em> that hidden order lives and <em>how</em> it drives slow, spatially heterogeneous relaxation.</p>
+      </div>
+      <div class="grid grid--4">
+        <div class="icard reveal" data-delay="1">
+          <span class="icard__ic"><i class="ti ti-snowflake" aria-hidden="true"></i></span>
+          <h3>Glass transition</h3>
+          <p>Structural and dynamic origins of glass formation in supercooled liquids.</p>
+        </div>
+        <div class="icard reveal" data-delay="2">
+          <span class="icard__ic"><i class="ti ti-affiliate" aria-hidden="true"></i></span>
+          <h3>Dynamic heterogeneity</h3>
+          <p>Mobile and immobile clusters and string-like cooperative motion near T<sub>g</sub>.</p>
+        </div>
+        <div class="icard reveal" data-delay="3">
+          <span class="icard__ic"><i class="ti ti-3d-cube-sphere" aria-hidden="true"></i></span>
+          <h3>Many-body correlations</h3>
+          <p>Four-point structural entropy capturing angular order invisible to g(r).</p>
+        </div>
+        <div class="icard reveal" data-delay="4">
+          <span class="icard__ic"><i class="ti ti-ruler-measure" aria-hidden="true"></i></span>
+          <h3>Correlation lengths</h3>
+          <p>Static and dynamic length scales linking local packing to relaxation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SHOWCASE ============================ -->
+  <section class="section section--alt" id="showcase">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected projects</p>
+        <h2 class="section-title">Research in depth</h2>
+        <p>Two threads of my doctoral work — one published, one ongoing.</p>
+      </div>
+      <div class="showcase">
+        <article class="pcard reveal" data-delay="1">
+          <div class="pcard__media">
+            <img loading="lazy" src="{{ base_path }}/images/rAN.jpg" alt="Angular distribution g(r,θ,φ) projected on the unit sphere">
+            <span class="pcard__tag">Soft Matter · 2026</span>
+          </div>
+          <div class="pcard__body">
+            <h3>Beyond pair entropy: orientational many-body correlations</h3>
+            <p>A three-dimensional four-point structural entropy S<sub>3D</sub> that recovers icosahedral and dodecahedral angular ordering the conventional pair entropy S<sub>2</sub> completely misses.</p>
+            <div class="pcard__links">
+              <a href="{{ base_path }}/portfolio/" ><i class="ti ti-arrow-right" aria-hidden="true"></i> Read more</a>
+              <a href="https://doi.org/10.1039/D6SM00491A" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> DOI</a>
+              <a href="{{ base_path }}/publications/"><i class="ti ti-file-text" aria-hidden="true"></i> Paper</a>
+            </div>
+          </div>
+        </article>
+        <article class="pcard reveal" data-delay="2">
+          <div class="pcard__media">
+            <img loading="lazy" src="{{ base_path }}/images/clustert08d1p2.jpeg" alt="Spatial clusters of mobile particles in a supercooled liquid">
+            <span class="pcard__tag">Ongoing · thesis</span>
+          </div>
+          <div class="pcard__body">
+            <h3>Dynamic heterogeneity &amp; cooperative motion</h3>
+            <p>How mobile particles organize into clusters and string-like chains, and how that length scale grows as the system approaches the glass transition.</p>
+            <div class="pcard__links">
+              <a href="{{ base_path }}/portfolio/"><i class="ti ti-arrow-right" aria-hidden="true"></i> Read more</a>
+              <a href="{{ base_path }}/gallery/"><i class="ti ti-photo" aria-hidden="true"></i> Visualizations</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ GALLERY TEASER ============================ -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Research gallery</p>
+        <h2 class="section-title">Simulations, made visible</h2>
+        <p>Snapshots and animations straight from my molecular dynamics trajectories.</p>
+      </div>
+      <div class="gallery">
+        <a class="gtile reveal" data-delay="1" href="#" data-lightbox="{{ base_path }}/images/anim1_glass_transition.gif">
+          <img loading="lazy" src="{{ base_path }}/images/anim1_glass_transition.gif" alt="Animation of particle dynamics across the glass transition">
+          <span class="gtile__cap">Particle dynamics across T<sub>g</sub></span>
+        </a>
+        <a class="gtile reveal" data-delay="2" href="#" data-lightbox="{{ base_path }}/images/clustert0d1p2.gif">
+          <img loading="lazy" src="{{ base_path }}/images/clustert08d1p2.jpeg" alt="Mobile-particle cluster animation">
+          <span class="gtile__play"><i class="ti ti-player-play" aria-hidden="true"></i></span>
+          <span class="gtile__cap">Mobile-particle clusters</span>
+        </a>
+        <a class="gtile reveal" data-delay="3" href="#" data-lightbox="{{ base_path }}/images/rAN.jpg">
+          <img loading="lazy" src="{{ base_path }}/images/rAN.jpg" alt="Angular distribution on the unit sphere">
+          <span class="gtile__cap">Angular order g(r,θ,φ)</span>
+        </a>
+        <a class="gtile reveal" data-delay="4" href="#" data-lb-type="video" data-lightbox="{{ base_path }}/images/3D_density_variation.mp4">
+          <img loading="lazy" src="{{ base_path }}/images/coordframe1.jpg" alt="3D density variation visualization">
+          <span class="gtile__play"><i class="ti ti-player-play" aria-hidden="true"></i></span>
+          <span class="gtile__cap">3D density variation (video)</span>
+        </a>
+      </div>
+      <p style="margin-top:1.6rem" class="reveal"><a class="btn btn--outline" href="{{ base_path }}/gallery/"><i class="ti ti-photo" aria-hidden="true"></i> Explore the full gallery</a></p>
+    </div>
+  </section>
+
+  <!-- ============================ PUBLICATIONS PREVIEW ============================ -->
+  <section class="section section--alt" id="pubs">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Publications</p>
+        <h2 class="section-title">Recent work</h2>
+      </div>
+      <div class="grid grid--3">
+        {% assign pubs = site.publications | sort: 'date' | reverse %}
+        {% for pub in pubs limit:3 %}
+        <article class="icard reveal" data-delay="{{ forloop.index }}">
+          <span class="icard__ic"><i class="ti ti-{% if pub.category == 'manuscripts' %}book-2{% else %}notebook{% endif %}" aria-hidden="true"></i></span>
+          <p style="font-family:var(--font-mono);font-size:.78rem;color:var(--text-muted);margin:0 0 .4rem;text-transform:uppercase;letter-spacing:.04em">{{ pub.journal }} · {{ pub.date | date: "%Y" }}</p>
+          <h3 style="font-size:1.05rem">{{ pub.title }}</h3>
+          <p>{{ pub.author }}</p>
+          {% if pub.paperurl %}<p style="margin-top:.6rem"><a href="{{ pub.paperurl }}" target="_blank" rel="noopener" style="font-weight:600;font-size:.88rem"><i class="ti ti-external-link" aria-hidden="true"></i> View paper</a></p>{% endif %}
+        </article>
+        {% endfor %}
+      </div>
+      <p style="margin-top:1.6rem" class="reveal"><a class="btn btn--outline" href="{{ base_path }}/publications/"><i class="ti ti-article" aria-hidden="true"></i> All publications</a></p>
+    </div>
+  </section>
+
+  <!-- ============================ SKILLS ============================ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Technical toolkit</p>
+        <h2 class="section-title">Computational skills</h2>
+        <p>Built over five years of large-scale simulation and HPC administration.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="skillgroup reveal" data-delay="1">
+          <h3><i class="ti ti-atom" aria-hidden="true"></i> Simulation &amp; modelling</h3>
+          <div class="chips"><span class="chip">Molecular dynamics</span><span class="chip">LAMMPS</span><span class="chip">GROMACS</span><span class="chip">VMD</span><span class="chip">POV-Ray</span><span class="chip">Monte Carlo</span></div>
+        </div>
+        <div class="skillgroup reveal" data-delay="2">
+          <h3><i class="ti ti-code" aria-hidden="true"></i> Programming &amp; analysis</h3>
+          <div class="chips"><span class="chip">C / C++</span><span class="chip">Python</span><span class="chip">MATLAB</span><span class="chip">Fortran</span><span class="chip">Bash</span><span class="chip">LaTeX</span></div>
+        </div>
+        <div class="skillgroup reveal" data-delay="3">
+          <h3><i class="ti ti-server-2" aria-hidden="true"></i> Computing &amp; HPC</h3>
+          <div class="chips"><span class="chip">HPC clusters</span><span class="chip">SLURM</span><span class="chip">PBS</span><span class="chip">Linux</span><span class="chip">Git</span><span class="chip">Data visualization</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT CTA ============================ -->
+  <section class="section" id="contact" style="padding-top:0;">
+    <div class="container">
+      <div class="ctaband reveal">
+        <p class="eyebrow" style="color:var(--teal-300)">Let's collaborate</p>
+        <h2>Open to postdoctoral &amp; research collaborations</h2>
+        <p>I'm finishing my Ph.D. in 2026 and looking for postdoctoral positions in computational soft matter, statistical physics, and materials modelling. I'd be glad to discuss potential work together.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="mailto:{{ site.author.email }}"><i class="ti ti-mail" aria-hidden="true"></i> {{ site.author.email }}</a>
+          <a class="btn btn--ghost" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener"><i class="ti ti-school" aria-hidden="true"></i> Google Scholar</a>
+          <a class="btn btn--ghost" href="https://orcid.org/{{ site.author.orcid }}" target="_blank" rel="noopener"><i class="ti ti-id-badge-2" aria-hidden="true"></i> ORCID</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  {% include modern-footer.html %}
+</body>
+</html>

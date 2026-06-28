@@ -1,0 +1,72 @@
+{% include base_path %}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% capture page_title %}{% if page.title %}{{ page.title }} · {{ site.author.name }}{% else %}{{ site.author.name }} — {{ site.description }}{% endif %}{% endcapture %}
+{% capture page_desc %}{% if page.description %}{{ page.description }}{% else %}{{ site.author.name }}, {{ site.author.bio | strip }}{% endif %}{% endcapture %}
+{% capture page_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+{% capture og_image %}{{ site.url }}/images/{% if page.header.og_image %}{{ page.header.og_image }}{% else %}profile.jpg{% endif %}{% endcapture %}
+
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_desc | strip_newlines | truncate: 300 }}">
+<meta name="author" content="{{ site.author.name }}">
+<link rel="canonical" href="{{ page_url }}">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.author.name }}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_desc | strip_newlines | truncate: 300 }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="{{ og_image }}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_desc | strip_newlines | truncate: 200 }}">
+<meta name="twitter:image" content="{{ og_image }}">
+
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ base_path }}/images/favicon-32x32.png">
+<link rel="apple-touch-icon" href="{{ base_path }}/images/apple-touch-icon-180x180.png">
+<meta name="theme-color" content="#082338">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Tabler icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.11.0/dist/tabler-icons.min.css">
+
+<!-- Site styles -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/site.css?v=1">
+
+<!-- Apply theme before paint to avoid flash -->
+<script>
+  (function(){try{var t=localStorage.getItem("skn-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+</script>
+
+<!-- Structured data: Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name }}",
+  "url": "{{ site.url }}",
+  "image": "{{ site.url }}/images/profile.jpg",
+  "jobTitle": "Doctoral Researcher in Computational Soft Matter Physics",
+  "affiliation": { "@type": "Organization", "name": "Indian Institute of Technology Mandi" },
+  "alumniOf": ["Indian Institute of Technology Delhi", "University of Delhi"],
+  "email": "mailto:{{ site.author.email }}",
+  "knowsAbout": ["Glass transition", "Molecular dynamics simulation", "Supercooled liquids", "Statistical physics", "Dynamic heterogeneity", "Soft matter physics"],
+  "sameAs": [
+    "{{ site.author.googlescholar }}",
+    "https://orcid.org/{{ site.author.orcid }}",
+    "https://github.com/{{ site.author.github }}",
+    "https://www.linkedin.com/in/{{ site.author.linkedin }}"
+  ]
+}
+</script>

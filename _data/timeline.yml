@@ -1,0 +1,57 @@
+# Academic timeline (most recent first). type sets the icon:
+# education, research, publication, award, talk, service
+- year: "2026"
+  type: publication
+  title: "First-author paper in Soft Matter"
+  place: "Royal Society of Chemistry"
+  desc: "“Beyond Pair Entropy: Orientational Many-Body Correlations…” — first &amp; corresponding author."
+- year: "2026"
+  type: education
+  title: "Ph.D. in Physics (expected)"
+  place: "IIT Mandi · Advisor: Dr. Prasanth P. Jose"
+  desc: "Thesis on static and dynamic correlations in Kob–Andersen glass-forming mixtures."
+- year: "2025"
+  type: publication
+  title: "Two AIP Conference Proceedings"
+  place: "AIP Publishing, vol. 3198"
+  desc: "Minority composition in binary glass formers; local density, Debye–Waller factor and density relaxation."
+- year: "2025"
+  type: research
+  title: "Teaching Assistant — Statistical Mechanics"
+  place: "IIT Mandi · Jan–May 2025"
+  desc: "Supported graduate statistical mechanics coursework."
+- year: "2024"
+  type: award
+  title: "Best Poster Award, National Science Day 2024"
+  place: "IIT Mandi"
+  desc: "Recognised for research presentation on the glass transition."
+- year: "2024"
+  type: talk
+  title: "Poster — 68th DAE Solid State Physics Symposium"
+  place: "Bhabha Atomic Research Centre, Mumbai"
+  desc: "Local density, Debye–Waller factor and density relaxation."
+- year: "2023"
+  type: talk
+  title: "Poster — 67th DAE Solid State Physics Symposium"
+  place: "Bhabha Atomic Research Centre, Mumbai"
+  desc: "Presented doctoral research on supercooled liquids."
+- year: "2021"
+  type: research
+  title: "Began doctoral research"
+  place: "Physics of Complex Systems Lab, IIT Mandi"
+  desc: "Large-scale molecular dynamics of KA 80:20 binary Lennard-Jones mixtures."
+- year: "2021"
+  type: service
+  title: "HPC Administration Team"
+  place: "IIT Mandi · 2021–2023"
+  desc: "Managed user accounts and scientific software on the institute HPC cluster."
+- year: "2019"
+  type: education
+  title: "M.Sc. in Physics"
+  place: "IIT Delhi"
+  desc: "Master's thesis on irreversible aggregation of asymmetrical patchy particles; CSIR-NET (LS) qualified."
+- year: "2017"
+  type: education
+  title: "B.Sc. (Hons.) in Physics"
+  place: "Shivaji College, University of Delhi"
+  desc: "Minors in Mathematics and Computer Science; AIR 328 in IIT JAM."

@@ -1,6 +1,9 @@
 ---
 title: "Orientational Many-Body Correlations in Supercooled Liquids"
-excerpt: "Development of a three-dimensional four-point structural entropy S₃D that captures angular ordering invisible to conventional pair entropy.<br/><img src='/images/rAN.jpg'>"
+summary: "A three-dimensional four-point structural entropy S₃D that captures angular ordering invisible to conventional pair entropy."
+excerpt: "Development of a three-dimensional four-point structural entropy S₃D that captures angular ordering invisible to conventional pair entropy."
+image: "/images/rAN.jpg"
+tag: "Soft Matter · 2026"
 collection: portfolio
 ---
 

@@ -1,25 +1,21 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
+# Header navigation. Used by older theme layouts; the redesigned pages use
+# _includes/modern-nav.html. Kept in sync so every page is navigable.
 
 main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Gallery"
+    url: /gallery/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
+  - title: "Talks"
+    url: /talks/
+
   - title: "Portfolio"
     url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+
   - title: "CV"
     url: /cv/
-    
+
+  - title: "Contact"
+    url: /contact/

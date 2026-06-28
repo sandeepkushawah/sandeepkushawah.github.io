@@ -1,14 +1,30 @@
 ---
-layout: archive
-title: "Portfolio"
+layout: page-modern
+title: "Research Projects"
+eyebrow: "Selected work"
+subtitle: "The main threads of my doctoral research on the structure and dynamics of supercooled glass-forming liquids."
 permalink: /portfolio/
-author_profile: true
+description: "Research projects by Sandeep Kushawah on structural entropy and dynamic heterogeneity in supercooled glass-forming liquids."
 ---
 
 {% include base_path %}
 
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+<div class="showcase">
+{% for project in site.portfolio %}
+  <article class="pcard reveal">
+    {% if project.image %}
+    <a class="pcard__media" href="{{ project.url | relative_url }}">
+      <img loading="lazy" src="{{ base_path }}{{ project.image }}" alt="{{ project.title }}">
+      {% if project.tag %}<span class="pcard__tag">{{ project.tag }}</span>{% endif %}
+    </a>
+    {% endif %}
+    <div class="pcard__body">
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.summary | default: project.excerpt | strip_html | truncate: 180 }}</p>
+      <div class="pcard__links">
+        <a href="{{ project.url | relative_url }}"><i class="ti ti-arrow-right" aria-hidden="true"></i> Read more</a>
+      </div>
+    </div>
+  </article>
 {% endfor %}
-
+</div>

@@ -1,0 +1,36 @@
+{% include base_path %}
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a class="nav__brand" href="{{ base_path }}/" aria-label="Home — Sandeep Kushawah">
+      <span class="mark">SK</span> Sandeep Kushawah
+    </a>
+    <ul class="nav__links" id="primary-menu">
+      {% if page.is_home %}
+        <li><a href="#research">Research</a></li>
+        <li><a href="#showcase">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="{{ base_path }}/publications/">Publications</a></li>
+        <li><a href="{{ base_path }}/cv/">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      {% else %}
+        <li><a href="{{ base_path }}/">Home</a></li>
+        <li><a href="{{ base_path }}/publications/">Publications</a></li>
+        <li><a href="{{ base_path }}/portfolio/">Projects</a></li>
+        <li><a href="{{ base_path }}/gallery/">Gallery</a></li>
+        <li><a href="{{ base_path }}/talks/">Talks</a></li>
+        <li><a href="{{ base_path }}/cv/">CV</a></li>
+        <li><a href="{{ base_path }}/contact/">Contact</a></li>
+      {% endif %}
+    </ul>
+    <div class="nav__tools">
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <i class="ti ti-sun" aria-hidden="true"></i><i class="ti ti-moon" aria-hidden="true"></i>
+      </button>
+      <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</nav>

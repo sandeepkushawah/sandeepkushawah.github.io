@@ -1,0 +1,40 @@
+# Research gallery content. Each section has a title, description, and items.
+# item types: "image" (static figure), "gif" (animation), "video" (mp4).
+# poster = lightweight thumbnail shown in the grid; src = full media opened in the lightbox.
+
+- title: "Dynamics &amp; cooperative motion"
+  desc: "Animations straight from molecular dynamics trajectories, showing how particles move and cluster as the liquid is supercooled."
+  items:
+    - { type: gif, poster: /images/posters/anim1_glass_transition.jpg, src: /images/anim1_glass_transition.gif, title: "Particle dynamics across the glass transition", desc: "Single-particle motion from liquid to glass" }
+    - { type: video, poster: /images/posters/3D_density_variation.jpg, src: /images/3D_density_variation.mp4, title: "3D density variation", desc: "Density vs radial distance, KA mixture" }
+    - { type: image, poster: /images/diffused_particle.jpg, src: /images/diffused_particle.jpg, title: "Mobile-particle trajectory", desc: "Path of a diffusing particle in a supercooled liquid" }
+
+- title: "Dynamic heterogeneity — largest mobile cluster vs density"
+  desc: "The largest cluster of mobile A-type particles in the KA mixture at four number densities (ρ = 1.2–1.8), shown at the start of the observation window (t = 0) and at the structural-relaxation time (t = t*)."
+  items:
+    - { type: image, poster: /images/clustert08d1p2.jpeg, src: /images/clustert08d1p2.jpeg, title: "Mobile cluster · ρ = 1.2 · t = 0", desc: "Snapshot — 151 A-type particles" }
+    - { type: gif, poster: /images/posters/clustert0d1p2.jpg, src: /images/clustert0d1p2.gif, title: "Mobile cluster · ρ = 1.2 · t = 0", desc: "151 A-type particles" }
+    - { type: gif, poster: /images/posters/clustert0d1p4.jpg, src: /images/clustert0d1p4.gif, title: "Mobile cluster · ρ = 1.4 · t = 0", desc: "146 A-type particles" }
+    - { type: gif, poster: /images/posters/clustert0d1p6.jpg, src: /images/clustert0d1p6.gif, title: "Mobile cluster · ρ = 1.6 · t = 0", desc: "137 A-type particles" }
+    - { type: gif, poster: /images/posters/clustert0d1p8.jpg, src: /images/clustert0d1p8.gif, title: "Mobile cluster · ρ = 1.8 · t = 0", desc: "157 A-type particles" }
+    - { type: image, poster: /images/clustertt8d1p2.jpeg, src: /images/clustertt8d1p2.jpeg, title: "Mobile cluster · ρ = 1.2 · t = t*", desc: "Snapshot — 151 A-type particles" }
+    - { type: gif, poster: /images/posters/clusterttd1p2.jpg, src: /images/clusterttd1p2.gif, title: "Mobile cluster · ρ = 1.2 · t = t*", desc: "151 A-type particles" }
+    - { type: gif, poster: /images/posters/clusterttd1p4.jpg, src: /images/clusterttd1p4.gif, title: "Mobile cluster · ρ = 1.4 · t = t*", desc: "146 A-type particles" }
+    - { type: gif, poster: /images/posters/clusterttd1p6.jpg, src: /images/clusterttd1p6.gif, title: "Mobile cluster · ρ = 1.6 · t = t*", desc: "137 A-type particles" }
+    - { type: gif, poster: /images/posters/clusterttd1p8.jpg, src: /images/clusterttd1p8.gif, title: "Mobile cluster · ρ = 1.8 · t = t*", desc: "157 A-type particles" }
+
+- title: "Structure &amp; order parameters"
+  desc: "How I quantify local structure — from the radial distribution function to the full four-point angular distribution in a particle-centred frame."
+  items:
+    - { type: image, poster: /images/rAN.jpg, src: /images/rAN.jpg, title: "Angular distribution (A–N)", desc: "g(r,θ,φ) on the unit sphere" }
+    - { type: image, poster: /images/rAB.jpg, src: /images/rAB.jpg, title: "Angular distribution (A–B)", desc: "g(r,θ,φ) on the unit sphere" }
+    - { type: image, poster: /images/rdf.jpg, src: /images/rdf.jpg, title: "Radial distribution function", desc: "Counting neighbours in a shell at distance r" }
+    - { type: image, poster: /images/coordframe1.jpg, src: /images/coordframe1.jpg, title: "Particle-centred frame", desc: "Spherical coordinate / angular binning scheme" }
+
+- title: "Concepts &amp; schematics"
+  desc: "The physical picture behind the work: how a cooling liquid avoids crystallisation and falls out of equilibrium into a glass."
+  items:
+    - { type: image, poster: /images/gas_liquid_solid.png, src: /images/gas_liquid_solid.png, title: "Crystal vs glass", desc: "How cooling rate selects the final state" }
+    - { type: image, poster: /images/fig1_glass_states.png, src: /images/fig1_glass_states.png, title: "Liquid → supercooled → glass", desc: "States across the glass transition" }
+    - { type: image, poster: /images/glass_transition.jpg, src: /images/glass_transition.jpg, title: "Theories of the glass transition", desc: "Frustration vs competing orderings" }
+    - { type: image, poster: /images/simulation_flow.png, src: /images/simulation_flow.png, title: "Simulation workflow", desc: "Equilibration and production runs" }

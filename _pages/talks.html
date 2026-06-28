@@ -1,16 +1,25 @@
 ---
-layout: archive
-title: "Talks and presentations"
+layout: page-modern
+title: "Talks &amp; Presentations"
+eyebrow: "Conferences &amp; symposia"
+subtitle: "Poster presentations and talks at national symposia and schools on the statistical physics of the glass transition."
 permalink: /talks/
-author_profile: true
+description: "Talks and poster presentations by Sandeep Kushawah at DAE Solid State Physics Symposia and statistical physics schools."
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% assign talks = site.talks | sort: 'date' | reverse %}
+{% for talk in talks %}
+<article class="talk reveal">
+  <div class="talk__date">
+    {{ talk.date | date: "%b" }}<span>{{ talk.date | date: "%Y" }}</span>
+  </div>
+  <div class="talk__body">
+    {% if talk.type %}<span class="talk__type">{{ talk.type }}</span>{% endif %}
+    <h3 class="talk__title">{{ talk.title }}</h3>
+    {% if talk.venue %}<p class="talk__venue">{{ talk.venue }}</p>{% endif %}
+    {% if talk.location %}<p class="talk__loc"><i class="ti ti-map-pin" aria-hidden="true"></i> {{ talk.location }}</p>{% endif %}
+  </div>
+</article>
 {% endfor %}

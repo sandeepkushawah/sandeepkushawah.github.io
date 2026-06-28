@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" data-theme="light">
+<head>
+  {% include modern-head.html %}
+</head>
+<body>
+  {% include modern-nav.html %}
+  {% include base_path %}
+  <main id="main">
+    <section class="page-hero">
+      <div class="container" style="max-width:900px">
+        <p class="eyebrow" style="color:var(--teal-300)">{{ page.journal }}{% if page.volume %} · {{ page.volume }}{% endif %} · {{ page.date | date: "%Y" }}</p>
+        <h1 style="font-size:clamp(1.7rem,4vw,2.5rem)">{{ page.title }}</h1>
+        <p style="margin-top:.6rem">
+          {% assign authors = page.author | split: ", " %}
+          {% for a in authors %}{% if a == page.me %}<strong style="color:#fff">{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.2rem">
+          {% if page.paperurl %}<a class="btn btn--primary" href="{{ page.paperurl }}" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> {% if page.doi %}View on publisher (DOI){% else %}View paper{% endif %}</a>{% endif %}
+          <a class="btn btn--ghost" href="{{ base_path }}/publications/"><i class="ti ti-arrow-left" aria-hidden="true"></i> All publications</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:clamp(2.2rem,5vw,3rem)">
+      <div class="container">
+        <div class="prose" style="max-width:860px">
+          {% if page.featured %}
+          <p style="display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:.35rem .8rem;border-radius:8px;margin-bottom:1.4rem"><i class="ti ti-star" aria-hidden="true"></i> First &amp; corresponding author</p>
+          {% endif %}
+          {{ content }}
+          {% if page.bibtex %}
+          <details class="pub__bibtex" style="margin-top:2rem">
+            <summary><i class="ti ti-quote" aria-hidden="true"></i> Cite this work (BibTeX)</summary>
+            <pre><button class="copy-btn" type="button" aria-label="Copy BibTeX"><i class="ti ti-copy" aria-hidden="true"></i><span>Copy</span></button><code>{{ page.bibtex | strip }}</code></pre>
+          </details>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include modern-footer.html %}
+</body>
+</html>
