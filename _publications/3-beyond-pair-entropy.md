@@ -29,9 +29,9 @@ bibtex: |
 citation: 'Sandeep Kushawah, Devansu Chakraborty, Prasanth P. Jose. (2026). &quot;Beyond Pair Entropy: Orientational Many-Body Correlations in Supercooled Glass-Forming Liquids from a Four-Point Structural Entropy.&quot; <i>Soft Matter</i>, Advance Article.'
 ---
 
-Abstract: The conventional pair entropy S2, derived from the isotropic radial distribution function g(r), systematically underestimates structural ordering in supercooled glass-forming liquids. We argue that this failure arises because S<sub>2</sub>, constructed from the isotropic g(r), is inherently insensitive to the many-body orientational correlations that become accessible only through a four-point conditional distribution evaluated in a local particle-centered frame. To recover this information, we introduce a three-dimensional four-point structural entropy S<sub>3D</sub>, constructed from the four-point conditional distribution function g(r,θ,φ) evaluated in a local particle-centered reference frame, and derive its exact decomposition into a radial contribution S<sub>2</sub> and a weighted orientational entropy S<sub>Ω</sub>. Applying this framework to the canonical KA binary mixture, we find that S<sub>Ω</sub> accounts for a substantial fraction of S<sub>3D</sub> across the full temperature range studied, reflecting genuine icosahedral and dodecahedral angular ordering present at all temperatures — as independently established by Zhang and Kob - rather than a numerical artifact. These results demonstrate that g(r,θ,φ) encodes angular structural information entirely invisible to the conventional g(r) and to the thermodynamic excess entropy S<sub>ex</sub>, and that S<sub>3D</sub> provides a tractable thermodynamic measure of packing-driven orientational ordering across the supercooled regime.
+**Abstract.** The conventional pair entropy S<sub>2</sub>, derived from the isotropic radial distribution function g(r), systematically underestimates structural ordering in supercooled glass-forming liquids. We argue that this failure arises because S<sub>2</sub>, constructed from the isotropic g(r), is inherently insensitive to the many-body orientational correlations that become accessible only through a four-point conditional distribution evaluated in a local particle-centered frame. To recover this information, we introduce a three-dimensional four-point structural entropy S<sub>3D</sub>, constructed from the four-point conditional distribution function g(r,θ,φ) evaluated in a local particle-centered reference frame, and derive its exact decomposition into a radial contribution S<sub>2</sub> and a weighted orientational entropy S<sub>Ω</sub>. Applying this framework to the canonical KA binary mixture, we find that S<sub>Ω</sub> accounts for a substantial fraction of S<sub>3D</sub> across the full temperature range studied, reflecting genuine icosahedral and dodecahedral angular ordering present at all temperatures — as independently established by Zhang and Kob - rather than a numerical artifact. These results demonstrate that g(r,θ,φ) encodes angular structural information entirely invisible to the conventional g(r) and to the thermodynamic excess entropy S<sub>ex</sub>, and that S<sub>3D</sub> provides a tractable thermodynamic measure of packing-driven orientational ordering across the supercooled regime.
 
-Keywords: Binary Glass, Three Dimensional Density, Glass Transition, Molecular Dynamics, Structural Ordering, Orientational Entropy.
+**Keywords:** Binary Glass, Three Dimensional Density, Glass Transition, Molecular Dynamics, Structural Ordering, Orientational Entropy.
 
 ---
 
@@ -56,8 +56,8 @@ The 3D density variation with radial distance for the KA binary mixture:
   Your browser does not support the video tag.
 </video>
 
-Angular distribution g(r,θ,φ) projected onto the unit sphere at the first peak of g(r), for the A-A and A-B pairs respectively:
+Angular distribution g(r,θ,φ) projected onto the unit sphere at the first peak of g(r): the probability of finding a neighbour at (r,θ,φ) around a central A particle — first for all neighbours (A or B), then for B neighbours only:
 
-![Angular distribution on the unit sphere for A-N pair](/images/rAN.jpg)
+![Angular distribution around an A particle, all (A or B) neighbours](/images/rAN.jpg)
 
-![Angular distribution on the unit sphere for A-B pair](/images/rAB.jpg)
+![Angular distribution around an A particle, B neighbours](/images/rAB.jpg)

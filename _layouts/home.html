@@ -44,7 +44,7 @@
     <div class="container">
       <div class="stats reveal">
         <div class="stat"><div class="stat__num" data-count="3">0</div><div class="stat__label">Publications</div></div>
-        <div class="stat"><div class="stat__num" data-count="1" data-suffix="*">0</div><div class="stat__label">First-author paper</div></div>
+        <div class="stat"><div class="stat__num" data-count="1">0</div><div class="stat__label">First-author paper</div></div>
         <div class="stat"><div class="stat__num" data-count="4">0</div><div class="stat__label">Conferences &amp; schools</div></div>
         <div class="stat"><div class="stat__num" data-count="5" data-suffix="+">0</div><div class="stat__label">Years HPC computing</div></div>
       </div>
@@ -135,11 +135,12 @@
         <p>Snapshots and animations straight from my molecular dynamics trajectories.</p>
       </div>
       <div class="gallery">
-        <a class="gtile reveal" data-delay="1" href="#" data-lightbox="{{ base_path }}/images/anim1_glass_transition.gif">
-          <img loading="lazy" src="{{ base_path }}/images/anim1_glass_transition.gif" alt="Animation of particle dynamics across the glass transition">
+        <a class="gtile reveal" data-delay="1" href="#" data-lb-type="video" data-lightbox="{{ base_path }}/images/anim1_glass_transition.mp4">
+          <img loading="lazy" src="{{ base_path }}/images/posters/anim1_glass_transition.jpg" alt="Animation of particle dynamics across the glass transition">
+          <span class="gtile__play"><i class="ti ti-player-play" aria-hidden="true"></i></span>
           <span class="gtile__cap">Particle dynamics across T<sub>g</sub></span>
         </a>
-        <a class="gtile reveal" data-delay="2" href="#" data-lightbox="{{ base_path }}/images/clustert0d1p2.gif">
+        <a class="gtile reveal" data-delay="2" href="#" data-lb-type="video" data-lightbox="{{ base_path }}/images/clustert0d1p2.mp4">
           <img loading="lazy" src="{{ base_path }}/images/clustert08d1p2.jpeg" alt="Mobile-particle cluster animation">
           <span class="gtile__play"><i class="ti ti-player-play" aria-hidden="true"></i></span>
           <span class="gtile__cap">Mobile-particle clusters</span>

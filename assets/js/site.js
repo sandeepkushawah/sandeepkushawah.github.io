@@ -110,7 +110,7 @@
         e.preventDefault();
         var src = trig.getAttribute("data-lightbox");
         var type = trig.getAttribute("data-lb-type") || "image";
-        if (type === "video") openLB('<video src="' + src + '" controls autoplay loop playsinline></video>');
+        if (type === "video") openLB('<video src="' + src + '" controls autoplay muted loop playsinline></video>');
         else openLB('<img src="' + src + '" alt="">');
         return;
       }

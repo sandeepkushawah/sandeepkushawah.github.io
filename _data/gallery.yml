@@ -1,11 +1,14 @@
 # Research gallery content. Each section has a title, description, and items.
 # item types: "image" (static figure), "gif" (animation), "video" (mp4).
+# Animations are served as small looping MP4s (converted from the original GIFs,
+# ~10-20x smaller). To add one: ffmpeg -i in.gif -movflags +faststart -pix_fmt yuv420p
+#   -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -crf 24 out.mp4
 # poster = lightweight thumbnail shown in the grid; src = full media opened in the lightbox.
 
 - title: "Dynamics &amp; cooperative motion"
   desc: "Animations straight from molecular dynamics trajectories, showing how particles move and cluster as the liquid is supercooled."
   items:
-    - { type: gif, poster: /images/posters/anim1_glass_transition.jpg, src: /images/anim1_glass_transition.gif, title: "Particle dynamics across the glass transition", desc: "Single-particle motion from liquid to glass" }
+    - { type: gif, poster: /images/posters/anim1_glass_transition.jpg, src: /images/anim1_glass_transition.mp4, title: "Particle dynamics across the glass transition", desc: "Single-particle motion from liquid to glass" }
     - { type: video, poster: /images/posters/3D_density_variation.jpg, src: /images/3D_density_variation.mp4, title: "3D density variation", desc: "Density vs radial distance, KA mixture" }
     - { type: image, poster: /images/diffused_particle.jpg, src: /images/diffused_particle.jpg, title: "Mobile-particle trajectory", desc: "Path of a diffusing particle in a supercooled liquid" }
 
@@ -13,21 +16,21 @@
   desc: "The largest cluster of mobile A-type particles in the KA mixture at four number densities (ρ = 1.2–1.8), shown at the start of the observation window (t = 0) and at the structural-relaxation time (t = t*)."
   items:
     - { type: image, poster: /images/clustert08d1p2.jpeg, src: /images/clustert08d1p2.jpeg, title: "Mobile cluster · ρ = 1.2 · t = 0", desc: "Snapshot — 151 A-type particles" }
-    - { type: gif, poster: /images/posters/clustert0d1p2.jpg, src: /images/clustert0d1p2.gif, title: "Mobile cluster · ρ = 1.2 · t = 0", desc: "151 A-type particles" }
-    - { type: gif, poster: /images/posters/clustert0d1p4.jpg, src: /images/clustert0d1p4.gif, title: "Mobile cluster · ρ = 1.4 · t = 0", desc: "146 A-type particles" }
-    - { type: gif, poster: /images/posters/clustert0d1p6.jpg, src: /images/clustert0d1p6.gif, title: "Mobile cluster · ρ = 1.6 · t = 0", desc: "137 A-type particles" }
-    - { type: gif, poster: /images/posters/clustert0d1p8.jpg, src: /images/clustert0d1p8.gif, title: "Mobile cluster · ρ = 1.8 · t = 0", desc: "157 A-type particles" }
+    - { type: gif, poster: /images/posters/clustert0d1p2.jpg, src: /images/clustert0d1p2.mp4, title: "Mobile cluster · ρ = 1.2 · t = 0", desc: "151 A-type particles" }
+    - { type: gif, poster: /images/posters/clustert0d1p4.jpg, src: /images/clustert0d1p4.mp4, title: "Mobile cluster · ρ = 1.4 · t = 0", desc: "146 A-type particles" }
+    - { type: gif, poster: /images/posters/clustert0d1p6.jpg, src: /images/clustert0d1p6.mp4, title: "Mobile cluster · ρ = 1.6 · t = 0", desc: "137 A-type particles" }
+    - { type: gif, poster: /images/posters/clustert0d1p8.jpg, src: /images/clustert0d1p8.mp4, title: "Mobile cluster · ρ = 1.8 · t = 0", desc: "157 A-type particles" }
     - { type: image, poster: /images/clustertt8d1p2.jpeg, src: /images/clustertt8d1p2.jpeg, title: "Mobile cluster · ρ = 1.2 · t = t*", desc: "Snapshot — 151 A-type particles" }
-    - { type: gif, poster: /images/posters/clusterttd1p2.jpg, src: /images/clusterttd1p2.gif, title: "Mobile cluster · ρ = 1.2 · t = t*", desc: "151 A-type particles" }
-    - { type: gif, poster: /images/posters/clusterttd1p4.jpg, src: /images/clusterttd1p4.gif, title: "Mobile cluster · ρ = 1.4 · t = t*", desc: "146 A-type particles" }
-    - { type: gif, poster: /images/posters/clusterttd1p6.jpg, src: /images/clusterttd1p6.gif, title: "Mobile cluster · ρ = 1.6 · t = t*", desc: "137 A-type particles" }
-    - { type: gif, poster: /images/posters/clusterttd1p8.jpg, src: /images/clusterttd1p8.gif, title: "Mobile cluster · ρ = 1.8 · t = t*", desc: "157 A-type particles" }
+    - { type: gif, poster: /images/posters/clusterttd1p2.jpg, src: /images/clusterttd1p2.mp4, title: "Mobile cluster · ρ = 1.2 · t = t*", desc: "151 A-type particles" }
+    - { type: gif, poster: /images/posters/clusterttd1p4.jpg, src: /images/clusterttd1p4.mp4, title: "Mobile cluster · ρ = 1.4 · t = t*", desc: "146 A-type particles" }
+    - { type: gif, poster: /images/posters/clusterttd1p6.jpg, src: /images/clusterttd1p6.mp4, title: "Mobile cluster · ρ = 1.6 · t = t*", desc: "137 A-type particles" }
+    - { type: gif, poster: /images/posters/clusterttd1p8.jpg, src: /images/clusterttd1p8.mp4, title: "Mobile cluster · ρ = 1.8 · t = t*", desc: "157 A-type particles" }
 
 - title: "Structure &amp; order parameters"
   desc: "How I quantify local structure — from the radial distribution function to the full four-point angular distribution in a particle-centred frame."
   items:
-    - { type: image, poster: /images/rAN.jpg, src: /images/rAN.jpg, title: "Angular distribution (A–N)", desc: "g(r,θ,φ) on the unit sphere" }
-    - { type: image, poster: /images/rAB.jpg, src: /images/rAB.jpg, title: "Angular distribution (A–B)", desc: "g(r,θ,φ) on the unit sphere" }
+    - { type: image, poster: /images/rAN.jpg, src: /images/rAN.jpg, title: "Angular distribution around A (all neighbours)", desc: "Probability of finding an A or B particle at (r,θ,φ) around an A particle" }
+    - { type: image, poster: /images/rAB.jpg, src: /images/rAB.jpg, title: "Angular distribution around A (B neighbours)", desc: "Probability of finding a B particle at (r,θ,φ) around an A particle" }
     - { type: image, poster: /images/rdf.jpg, src: /images/rdf.jpg, title: "Radial distribution function", desc: "Counting neighbours in a shell at distance r" }
     - { type: image, poster: /images/coordframe1.jpg, src: /images/coordframe1.jpg, title: "Particle-centred frame", desc: "Spherical coordinate / angular binning scheme" }
 

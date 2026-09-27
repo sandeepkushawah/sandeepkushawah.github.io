@@ -1,0 +1,20 @@
+---
+layout: page-modern
+title: "News"
+eyebrow: "Updates"
+subtitle: "Seminars, papers, and other updates from my research."
+permalink: /news/
+description: "News and seminar announcements from Sandeep Kushawah's research on the glass transition."
+---
+
+{% include base_path %}
+
+<div class="post-list">
+{% for post in site.posts %}
+  <a class="post-item reveal" href="{{ post.url | relative_url }}">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.excerpt | strip_html | strip | truncate: 190 }}</p>
+  </a>
+{% endfor %}
+</div>

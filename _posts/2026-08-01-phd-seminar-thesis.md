@@ -1,7 +1,9 @@
 ---
-title: 'PhD Seminar: Thesis Presentation — Structural and Dynamic Origins of the Glass Transition'
-date: 2026-08-01
-permalink: /posts/2026/08/phd-seminar-thesis/
+title: 'Thesis Synopsis Seminar: Structural and Dynamic Origins of the Glass Transition'
+date: 2026-09-27
+permalink: /posts/2026/10/thesis-synopsis-seminar/
+redirect_from:
+  - /posts/2026/08/phd-seminar-thesis/
 tags:
   - seminar
   - PhD
@@ -10,15 +12,15 @@ tags:
   - IIT Mandi
 ---
 
-My **PhD Seminar** is tentatively scheduled for **August 2026** at IIT Mandi, where I will be presenting my doctoral thesis.
+My **Thesis Synopsis Seminar** will be held at IIT Mandi on **1 October 2026**. I plan to submit my doctoral thesis in October 2026.
 
 ## About the Seminar
 
-This will be a formal presentation of my PhD thesis, summarizing several years of research on the structural and dynamic origins of the glass transition in supercooled liquids, carried out under the supervision of Prof. Prasanth P. Jose at the Indian Institute of Technology Mandi.
+This will be a formal presentation of my thesis, summarizing several years of research on the structural and dynamic origins of the glass transition in supercooled liquids, carried out under the supervision of Dr. Prasanth P. Jose at the Indian Institute of Technology Mandi.
 
 ## Thesis Overview
 
-My thesis brings together three interconnected research themes explored using Molecular Dynamics (MD) simulations of model glass-forming systems, primarily the Kob-Andersen (KA) binary Lennard-Jones mixture:
+My thesis brings together four interconnected research themes explored using Molecular Dynamics (MD) simulations of model glass-forming systems, primarily the Kob-Andersen (KA) binary Lennard-Jones mixture:
 
 1. **Composition effects on glass-forming ability** — How varying the minority species concentration modifies the structural and dynamic properties that determine glass-forming ability. Published in *AIP Conference Proceedings* (2025).
 
@@ -32,4 +34,4 @@ My thesis brings together three interconnected research themes explored using Mo
 
 Understanding the glass transition remains one of the central unsolved problems in condensed matter physics. My work contributes new quantitative tools — particularly the S₃D entropy framework — and new empirical observations of dynamic heterogeneity that constrain and motivate theoretical models of glass formation.
 
-Further details on the date, time, and venue will be announced closer to the event.
+All are welcome.

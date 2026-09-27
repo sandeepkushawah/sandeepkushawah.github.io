@@ -41,7 +41,7 @@ description: "Curriculum vitae of Sandeep Kushawah — education, research exper
   <div class="cv-block">
     <h2><i class="ti ti-school" aria-hidden="true"></i> Education</h2>
     <div class="cv-entry">
-      <div class="cv-entry__top"><p class="cv-entry__title">Ph.D. in Physics (in progress)</p><span class="cv-entry__date">Since 2021</span></div>
+      <div class="cv-entry__top"><p class="cv-entry__title">Ph.D. in Physics (thesis submission Oct 2026)</p><span class="cv-entry__date">Since 2021</span></div>
       <p class="cv-entry__org">Indian Institute of Technology Mandi</p>
       <ul><li>Advisor: Dr. Prasanth P. Jose. Static and dynamic correlations in Kob–Andersen glass-forming mixtures via molecular dynamics simulation.</li><li>Coursework CGPA 8.0/10.</li></ul>
     </div>
@@ -130,6 +130,7 @@ description: "Curriculum vitae of Sandeep Kushawah — education, research exper
     <ul class="cv-awards">
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Poster, 68th DAE Solid State Physics Symposium, BARC, Mumbai.</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Poster, 67th DAE Solid State Physics Symposium, BARC, Mumbai.</li>
+      <li><i class="ti ti-point-filled" aria-hidden="true"></i> CECAM Flagship School, Stuttgart, Germany — Oct 2026 (accepted).</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Bangalore School on Statistical Physics XV, ICTS &amp; RRI.</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Bangalore School on Statistical Physics XIV, ICTS &amp; RRI.</li>
     </ul>

@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Sandeep Kushawah"
 title_separator          : "-"
 name                     : &name "Sandeep Kushawah"
-description              : &description "My personal Research Website"
+description              : &description "Computational Soft Matter Physicist"
 url                      : https://sandeepkushawah.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sandeepkushawah/sandeepkushawah.github.io"
@@ -164,6 +164,32 @@ include:
   - files
 exclude:
   - "preview-*.html"
+  # Leftover academicpages template pages/tools (kept in the repo for reference,
+  # but not published or listed in the sitemap)
+  - _pages/markdown.md
+  - _pages/archive-layout-with-content.md
+  - _pages/non-menu-page.md
+  - _pages/terms.md
+  - _pages/sitemap.md
+  - _pages/year-archive.html
+  - _pages/category-archive.html
+  - _pages/tag-archive.html
+  - _pages/collection-archive.html
+  - _pages/page-archive.html
+  - _pages/talkmap.html
+  - _pages/teaching.html
+  - _drafts
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - "*.ipynb"
+  - SETUP-REDESIGN.md
+  - CONTRIBUTING.md
+  - README.md
+  - deploy.sh
+  - deploy.ps1
+  - docker-compose.yaml
+  - _config_docker.yml
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -220,7 +246,7 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
@@ -240,12 +266,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      layout: post
   # _pages
   - scope:
       path: ""

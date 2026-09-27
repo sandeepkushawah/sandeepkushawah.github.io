@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" data-theme="light">
+<head>
+  {% include modern-head.html %}
+</head>
+<body>
+  {% include modern-nav.html %}
+  {% include base_path %}
+  <main id="main">
+    <section class="page-hero">
+      <div class="container" style="max-width:860px">
+        <p class="eyebrow" style="color:var(--teal-300)">News</p>
+        <h1 style="font-size:clamp(1.6rem,4vw,2.4rem)">{{ page.title }}</h1>
+        <div class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}"><i class="ti ti-calendar" aria-hidden="true"></i> {{ page.date | date: "%B %-d, %Y" }}</time>
+        </div>
+        <div style="margin-top:1.2rem"><a class="btn btn--ghost" href="{{ base_path }}/news/"><i class="ti ti-arrow-left" aria-hidden="true"></i> All news</a></div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:clamp(2.2rem,5vw,3rem)">
+      <div class="container">
+        <div class="prose" style="max-width:760px">
+          {{ content }}
+          {% if page.tags.size > 0 %}
+          <div class="post-tags">{% for t in page.tags %}<span class="chip">{{ t }}</span>{% endfor %}</div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include modern-footer.html %}
+</body>
+</html>

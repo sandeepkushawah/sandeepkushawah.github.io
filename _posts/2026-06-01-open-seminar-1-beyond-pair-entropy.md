@@ -1,6 +1,6 @@
 ---
 title: 'Open Seminar 1: Beyond Pair Entropy — Orientational Many-Body Correlations in Supercooled Liquids'
-date: 2026-06-01
+date: 2026-07-02
 permalink: /posts/2026/06/open-seminar-1-beyond-pair-entropy/
 tags:
   - seminar
@@ -9,7 +9,7 @@ tags:
   - soft matter
 ---
 
-I am excited to announce my first Open Seminar, to be held in **June 2026**, where I will present our recently published work in *Soft Matter*.
+I gave my first Open Seminar at IIT Mandi on **2 July 2026**, presenting our recently published work in *Soft Matter*.
 
 ## About the Talk
 
@@ -19,9 +19,9 @@ This seminar is based on our paper:
 > Sandeep Kushawah, Devansu Chakraborty, Prasanth P. Jose — *Soft Matter* (2026)
 > DOI: [10.1039/D6SM00491A](https://doi.org/10.1039/D6SM00491A)
 
-## What I Will Cover
+## What I Covered
 
-The conventional pair entropy S₂, derived from the isotropic radial distribution function g(r), systematically underestimates structural ordering in supercooled glass-forming liquids. In this talk, I will explain:
+The conventional pair entropy S₂, derived from the isotropic radial distribution function g(r), systematically underestimates structural ordering in supercooled glass-forming liquids. In the talk, I explained:
 
 - **Why S₂ fails**: It is insensitive to many-body orientational correlations that only become visible through a four-point conditional distribution in a local particle-centered frame.
 - **The new framework**: We introduce S₃D, a three-dimensional four-point structural entropy constructed from g(r,θ,φ), and its exact decomposition into a radial contribution S₂ and a weighted orientational entropy S_Ω.
@@ -32,4 +32,4 @@ The conventional pair entropy S₂, derived from the isotropic radial distributi
 
 Understanding the true nature of structural ordering in supercooled liquids is central to solving the glass transition problem — one of the deepest open questions in condensed matter physics. This work provides a tractable thermodynamic measure of packing-driven orientational ordering that goes beyond what conventional pair-correlation tools can reveal.
 
-I look forward to an open discussion. Stay tuned for the exact date, time, and venue announcement.
+Thanks to everyone who attended and joined the discussion.

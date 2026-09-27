@@ -18,7 +18,7 @@ description: "A visual gallery of molecular dynamics simulation snapshots, clust
   <div class="ggrid">
     {% for item in section.items %}
     <figure class="gcard">
-      <a class="gcard__media" href="#" data-lightbox="{{ base_path }}{{ item.src }}"{% if item.type == 'video' %} data-lb-type="video"{% endif %} aria-label="View: {{ item.title }}">
+      <a class="gcard__media" href="#" data-lightbox="{{ base_path }}{{ item.src }}"{% if item.type == 'video' or item.src contains '.mp4' %} data-lb-type="video"{% endif %} aria-label="View: {{ item.title }}">
         <img loading="lazy" src="{{ base_path }}{{ item.poster }}" alt="{{ item.title }} — {{ item.desc }}">
         {% if item.type == 'gif' %}<span class="gcard__badge">Animation</span>{% elsif item.type == 'video' %}<span class="gcard__badge">Video</span>{% endif %}
         {% if item.type == 'gif' or item.type == 'video' %}<span class="gcard__play"><span><i class="ti ti-player-play" aria-hidden="true"></i></span></span>{% endif %}

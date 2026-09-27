@@ -2,6 +2,7 @@
 #  deploy.ps1 — publish the redesigned site to GitHub Pages
 #  Usage (PowerShell, from the repo root):   .\deploy.ps1
 # ============================================================================
+param([string]$Message = "Update site")
 $ErrorActionPreference = "Stop"
 Set-Location -Path $PSScriptRoot
 
@@ -14,13 +15,13 @@ git add `
   _includes/modern-head.html _includes/modern-nav.html _includes/modern-footer.html `
   _layouts/home.html _layouts/page-modern.html _layouts/publication.html _layouts/portfolio.html _layouts/talk.html `
   _pages/about.md _pages/publications.html _pages/gallery.html _pages/talks.html _pages/portfolio.html _pages/cv.md _pages/contact.md `
-  _publications _portfolio `
+  _publications _portfolio _posts _layouts/post.html _pages/news.html _pages/404.md .gitignore `
   _data/gallery.yml _data/timeline.yml _data/navigation.yml `
   assets/css/site.css assets/js/site.js `
   files images
 
 Write-Host "3/4  Committing..."
-git commit -m "Redesign site into a modern academic portfolio"
+git commit -m $Message
 
 Write-Host "4/4  Pushing to origin/main..."
 git push origin main
