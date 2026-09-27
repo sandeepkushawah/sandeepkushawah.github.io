@@ -129,6 +129,8 @@ description: "Curriculum vitae of Sandeep Kushawah — education, research exper
   <div class="cv-block">
     <h2><i class="ti ti-presentation" aria-hidden="true"></i> Selected presentations &amp; schools</h2>
     <ul class="cv-awards">
+      <li><i class="ti ti-point-filled" aria-hidden="true"></i> Poster, COMPFLU 2025, IISc Bangalore, Dec 2025 — “Temperature-dependent string-like cooperative motions in Kob–Andersen binary mixtures” (session: Conventional and Ultrastable Glasses).</li>
+      <li><i class="ti ti-point-filled" aria-hidden="true"></i> COMPFLU 2025 Mini School, IISc Bangalore, Dec 2025.</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Poster, 68th DAE Solid State Physics Symposium, BARC, Mumbai.</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Poster, 67th DAE Solid State Physics Symposium, BARC, Mumbai.</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Bangalore School on Statistical Physics XV, ICTS &amp; RRI.</li>
