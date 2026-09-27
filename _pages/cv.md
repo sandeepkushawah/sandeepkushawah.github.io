@@ -100,6 +100,7 @@ description: "Curriculum vitae of Sandeep Kushawah — education, research exper
     <h2><i class="ti ti-trophy" aria-hidden="true"></i> Awards &amp; honours</h2>
     <ul class="cv-awards">
       <li><i class="ti ti-award" aria-hidden="true"></i> Best Poster Award, National Science Day 2024, IIT Mandi.</li>
+      <li><i class="ti ti-plane-departure" aria-hidden="true"></i> ANRF International Travel Support, 2026 — awarded by the Anusandhan National Research Foundation (airfare, visa and registration) to attend the CECAM Flagship School “Studying dynamics in soft matter and porous materials”, Germany, 5–9 Oct 2026 (selected; did not attend).</li>
       <li><i class="ti ti-circle-check" aria-hidden="true"></i> CSIR-NET (Lectureship), Dec 2019 — 96.388 percentile.</li>
       <li><i class="ti ti-circle-check" aria-hidden="true"></i> JEST Physics 2020 — AIR 320 (95.61 percentile).</li>
       <li><i class="ti ti-circle-check" aria-hidden="true"></i> IIT JAM 2017 — AIR 328 / 11,902.</li>
@@ -130,7 +131,6 @@ description: "Curriculum vitae of Sandeep Kushawah — education, research exper
     <ul class="cv-awards">
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Poster, 68th DAE Solid State Physics Symposium, BARC, Mumbai.</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Poster, 67th DAE Solid State Physics Symposium, BARC, Mumbai.</li>
-      <li><i class="ti ti-point-filled" aria-hidden="true"></i> CECAM Flagship School, Stuttgart, Germany — Oct 2026 (accepted).</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Bangalore School on Statistical Physics XV, ICTS &amp; RRI.</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Bangalore School on Statistical Physics XIV, ICTS &amp; RRI.</li>
     </ul>
