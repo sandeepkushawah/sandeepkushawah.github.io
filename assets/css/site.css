@@ -254,6 +254,9 @@ img { max-width: 100%; height: auto; display: block; }
 .prose p, .prose li { color: var(--text-soft); }
 .prose img { border-radius: var(--radius); margin: 1.4rem 0; border: 1px solid var(--border); max-width: 100%; height: auto; }
 .prose video { max-width: 100%; border-radius: var(--radius); }
+.prose figure { margin: 1.6rem 0; }
+.prose figure video { display: block; width: 100%; background: #fff; border: 1px solid var(--border); }
+.prose figcaption { font-size: .88rem; color: var(--text-muted); margin-top: .5rem; }
 /* Several figures are transparent PNGs with black labels: give them a white
    card in dark mode so the text stays readable. */
 [data-theme="dark"] .prose img, [data-theme="dark"] .pub__media img,

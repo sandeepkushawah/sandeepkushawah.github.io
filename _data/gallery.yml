@@ -4,12 +4,25 @@
 # ~10-20x smaller). To add one: ffmpeg -i in.gif -movflags +faststart -pix_fmt yuv420p
 #   -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -crf 24 out.mp4
 # poster = lightweight thumbnail shown in the grid; src = full media opened in the lightbox.
+# Figures in images/synopsis/ come from the Doctoral Synopsis Seminar (1 Oct 2026).
+
+- title: "The puzzle: a slowdown the structure barely shows"
+  desc: "Kob–Andersen mixture at ρ = 1.2, cooled from T = 2.0 to 0.44. The relaxation time grows by several thousand times, yet the pair structure g(r) hardly changes. Correlators develop a cage plateau — the classic two-step relaxation."
+  items:
+    - { type: image, poster: /images/posters/syn_ka_box.jpg, src: /images/synopsis/ka_box.jpg, title: "The Kob–Andersen 80:20 mixture", desc: "N = 8000 particles: 6400 A (grey), 1600 B (red)" }
+    - { type: gif, poster: /images/posters/gr_cooling.jpg, src: /images/synopsis/gr_cooling.mp4, title: "g(r) on cooling", desc: "The first peak sharpens — the structure barely changes" }
+    - { type: gif, poster: /images/posters/fs_two_step.jpg, src: /images/synopsis/fs_two_step.mp4, title: "Two-step relaxation of Fs(k,t)", desc: "A cage plateau opens and τα grows on cooling" }
+    - { type: gif, poster: /images/posters/msd_two_step.jpg, src: /images/synopsis/msd_two_step.mp4, title: "Mean-squared displacement", desc: "Ballistic → caged plateau → diffusive" }
+    - { type: image, poster: /images/posters/syn_alpha2_nongaussian.jpg, src: /images/synopsis/alpha2_nongaussian.jpg, title: "Non-Gaussian parameter α₂(t)", desc: "Its peak grows and shifts on cooling: heterogeneity builds up" }
+    - { type: image, poster: /images/posters/syn_statepoint_map.jpg, src: /images/synopsis/statepoint_map.jpg, title: "State-point map", desc: "≈170 state points on four isochores, coloured by log τ" }
 
 - title: "Dynamics &amp; cooperative motion"
-  desc: "Animations straight from molecular dynamics trajectories, showing how particles move and cluster as the liquid is supercooled."
+  desc: "How particles move and cluster as the liquid is supercooled, straight from molecular dynamics trajectories."
   items:
     - { type: gif, poster: /images/posters/anim1_glass_transition.jpg, src: /images/anim1_glass_transition.mp4, title: "Particle dynamics across the glass transition", desc: "Single-particle motion from liquid to glass" }
-    - { type: video, poster: /images/posters/3D_density_variation.jpg, src: /images/3D_density_variation.mp4, title: "3D density variation", desc: "Density vs radial distance, KA mixture" }
+    - { type: image, poster: /images/posters/syn_mobility_territories.jpg, src: /images/synopsis/mobility_territories.jpg, title: "Fast and slow territories", desc: "A particles coloured by mobility at each density's Tc; mobile (red) vs immobile (blue) 5%" }
+    - { type: image, poster: /images/posters/syn_longest_strings.jpg, src: /images/synopsis/longest_strings.jpg, title: "Longest mobile strings at Tc", desc: "Green t = 0, red t = t*: quasi-linear chains at every density" }
+    - { type: image, poster: /images/posters/syn_vanhove_tail.jpg, src: /images/synopsis/vanhove_tail.jpg, title: "Van Hove function at t*", desc: "Caged main peak plus a non-Gaussian hopping tail" }
     - { type: image, poster: /images/diffused_particle.jpg, src: /images/diffused_particle.jpg, title: "Mobile-particle trajectory", desc: "Path of a diffusing particle in a supercooled liquid" }
 
 - title: "Dynamic heterogeneity — largest mobile cluster vs density"
@@ -26,18 +39,25 @@
     - { type: gif, poster: /images/posters/clusterttd1p6.jpg, src: /images/clusterttd1p6.mp4, title: "Mobile cluster · ρ = 1.6 · t = t*", desc: "137 A-type particles" }
     - { type: gif, poster: /images/posters/clusterttd1p8.jpg, src: /images/clusterttd1p8.mp4, title: "Mobile cluster · ρ = 1.8 · t = t*", desc: "157 A-type particles" }
 
-- title: "Structure &amp; order parameters"
-  desc: "How I quantify local structure — from the radial distribution function to the full four-point angular distribution in a particle-centred frame."
+- title: "Structure, cages &amp; orientational order"
+  desc: "How I quantify local structure — from the radial distribution function to the full four-point angular distribution in a particle-centred frame — and what a particle's cage actually looks like."
   items:
+    - { type: gif, poster: /images/posters/cage_rotating.jpg, src: /images/synopsis/cage_rotating.mp4, title: "A particle's cage in 3D", desc: "Neighbour shell around a central particle (A red, B blue)" }
+    - { type: image, poster: /images/posters/syn_molecular_cage.jpg, src: /images/synopsis/molecular_cage.jpg, title: "The molecular cage and its relaxation channels", desc: "(a) 3D KA cage at ρ = 1.2; (b) paths and string moves between neighbours" }
+    - { type: image, poster: /images/posters/syn_angular_cage_spheres.jpg, src: /images/synopsis/angular_cage_spheres.jpg, title: "The cage is not round", desc: "gαβ(r = 2.2, θ, φ) on the unit sphere for AA, AB, BA, BB (T = 0.45, ρ = 1.2)" }
     - { type: image, poster: /images/rAN.jpg, src: /images/rAN.jpg, title: "Angular distribution around A (all neighbours)", desc: "Probability of finding an A or B particle at (r,θ,φ) around an A particle" }
     - { type: image, poster: /images/rAB.jpg, src: /images/rAB.jpg, title: "Angular distribution around A (B neighbours)", desc: "Probability of finding a B particle at (r,θ,φ) around an A particle" }
-    - { type: image, poster: /images/rdf.jpg, src: /images/rdf.jpg, title: "Radial distribution function", desc: "Counting neighbours in a shell at distance r" }
+    - { type: image, poster: /images/posters/syn_equal_volume_sphere.jpg, src: /images/synopsis/equal_volume_sphere.jpg, title: "Equal solid-angle binning", desc: "Cells of equal volume on each spherical shell" }
     - { type: image, poster: /images/coordframe1.jpg, src: /images/coordframe1.jpg, title: "Particle-centred frame", desc: "Spherical coordinate / angular binning scheme" }
+    - { type: image, poster: /images/rdf.jpg, src: /images/rdf.jpg, title: "Radial distribution function", desc: "Counting neighbours in a shell at distance r" }
 
 - title: "Concepts &amp; schematics"
-  desc: "The physical picture behind the work: how a cooling liquid avoids crystallisation and falls out of equilibrium into a glass."
+  desc: "The physical picture behind the work: how a cooling liquid avoids crystallisation, gets caged on its energy landscape, and falls out of equilibrium into a glass."
   items:
     - { type: image, poster: /images/gas_liquid_solid.png, src: /images/gas_liquid_solid.png, title: "Crystal vs glass", desc: "How cooling rate selects the final state" }
     - { type: image, poster: /images/fig1_glass_states.png, src: /images/fig1_glass_states.png, title: "Liquid → supercooled → glass", desc: "States across the glass transition" }
+    - { type: image, poster: /images/posters/syn_pel_schematic.jpg, src: /images/synopsis/pel_schematic.jpg, title: "Potential energy landscape", desc: "Caging within basins, activated hopping between them" }
+    - { type: image, poster: /images/posters/syn_cage_not_round_schematic.jpg, src: /images/synopsis/cage_not_round_schematic.jpg, title: "What g(r) keeps vs what the particle sees", desc: "The angular average hides the gaps in a cage" }
+    - { type: image, poster: /images/posters/syn_ka_kawca_potential.jpg, src: /images/synopsis/ka_kawca_potential.jpg, title: "KA vs purely repulsive KAWCA", desc: "Same model with the attraction removed" }
     - { type: image, poster: /images/glass_transition.jpg, src: /images/glass_transition.jpg, title: "Theories of the glass transition", desc: "Frustration vs competing orderings" }
     - { type: image, poster: /images/simulation_flow.png, src: /images/simulation_flow.png, title: "Simulation workflow", desc: "Equilibration and production runs" }
