@@ -1,6 +1,6 @@
 ---
 title: 'Thesis Synopsis Seminar: Structural and Dynamic Origins of the Glass Transition'
-date: 2026-09-27
+date: 2026-10-01
 permalink: /posts/2026/10/thesis-synopsis-seminar/
 redirect_from:
   - /posts/2026/08/phd-seminar-thesis/
@@ -12,11 +12,11 @@ tags:
   - IIT Mandi
 ---
 
-My **Thesis Synopsis Seminar** will be held at IIT Mandi on **1 October 2026**. I plan to submit my doctoral thesis in October 2026.
+I presented my **Thesis Synopsis Seminar** at IIT Mandi on **1 October 2026** — the final step before submitting my doctoral thesis.
 
 ## About the Seminar
 
-This will be a formal presentation of my thesis, summarizing several years of research on the structural and dynamic origins of the glass transition in supercooled liquids, carried out under the supervision of Dr. Prasanth P. Jose at the Indian Institute of Technology Mandi.
+The seminar was a formal presentation of my thesis, summarizing several years of research on the structural and dynamic origins of the glass transition in supercooled liquids, carried out under the supervision of Dr. Prasanth P. Jose at the Indian Institute of Technology Mandi.
 
 ## Thesis Overview
 
@@ -34,4 +34,4 @@ My thesis brings together four interconnected research themes explored using Mol
 
 Understanding the glass transition remains one of the central unsolved problems in condensed matter physics. My work contributes new quantitative tools — particularly the S₃D entropy framework — and new empirical observations of dynamic heterogeneity that constrain and motivate theoretical models of glass formation.
 
-All are welcome.
+Thanks to everyone who attended. Figures and animations from the seminar are now in the [research gallery](/gallery/) and on the [projects](/portfolio/) pages.

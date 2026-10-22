@@ -109,6 +109,21 @@ description: "Curriculum vitae of Sandeep Kushawah — education, research exper
   </div>
 
   <div class="cv-block cv-full">
+    <h2><i class="ti ti-article" aria-hidden="true"></i> Publications</h2>
+    {% assign cvpubs = site.publications | sort: "date" | reverse %}
+    <ol class="cv-pubs">
+      {% for pub in cvpubs %}
+      <li>
+        {% assign authors = pub.author | split: ", " %}{% for a in authors %}{% if a == pub.me %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+        <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>.
+        <em>{{ pub.journal }}</em>{% if pub.volume %}, {{ pub.volume }}{% endif %} ({{ pub.date | date: "%Y" }}){% if pub.status %} — {{ pub.status | downcase }}{% endif %}.
+        {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">doi:{{ pub.doi }}</a>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  <div class="cv-block cv-full">
     <h2><i class="ti ti-tools" aria-hidden="true"></i> Technical skills</h2>
     <div class="grid grid--3" style="gap:1.2rem">
       <div class="skillgroup">

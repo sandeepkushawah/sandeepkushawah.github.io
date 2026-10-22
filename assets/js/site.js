@@ -98,25 +98,55 @@
     counters.forEach(animateCount);
   }
 
-  /* ----- Lightbox (images + videos) --------------------------------------- */
+  /* ----- Lightbox (images + videos, with prev/next and captions) --------- */
   var lb = document.querySelector(".lightbox");
   if (lb) {
     var lbContent = lb.querySelector(".lightbox__content");
-    function openLB(html) { lbContent.innerHTML = html; lb.classList.add("open"); document.body.style.overflow = "hidden"; }
-    function closeLB() { lb.classList.remove("open"); lbContent.innerHTML = ""; document.body.style.overflow = ""; }
+    var items = [], idx = -1, lastFocus = null;
+    function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+    function captionFor(trig) {
+      var fig = trig.closest("figure, .gtile, .pub");
+      var h = fig && fig.querySelector("figcaption h3, .gtile__cap, .pub__title");
+      var p = fig && fig.querySelector("figcaption p");
+      var t = h ? h.textContent.trim() : (trig.getAttribute("aria-label") || "").replace(/^View: /, "");
+      return t + (p ? " — " + p.textContent.trim() : "");
+    }
+    function show(i) {
+      idx = (i + items.length) % items.length;
+      var trig = items[idx];
+      var src = trig.getAttribute("data-lightbox");
+      var type = trig.getAttribute("data-lb-type") || "image";
+      var cap = captionFor(trig);
+      var media = type === "video"
+        ? '<video src="' + esc(src) + '" controls autoplay muted loop playsinline></video>'
+        : '<img src="' + esc(src) + '" alt="' + esc(cap) + '">';
+      lbContent.innerHTML = media + (cap ? '<p class="lightbox__cap">' + esc(cap) + (items.length > 1 ? ' <span>' + (idx + 1) + " / " + items.length + "</span>" : "") + "</p>" : "");
+      lb.classList.toggle("lightbox--single", items.length < 2);
+    }
+    function openLB(trig) {
+      items = Array.prototype.slice.call(document.querySelectorAll("[data-lightbox]"));
+      lastFocus = document.activeElement;
+      lb.classList.add("open"); document.body.style.overflow = "hidden";
+      show(items.indexOf(trig));
+      var c = lb.querySelector(".lightbox__close"); if (c) c.focus();
+    }
+    function closeLB() {
+      lb.classList.remove("open"); lbContent.innerHTML = ""; document.body.style.overflow = "";
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
     document.addEventListener("click", function (e) {
       var trig = e.target.closest("[data-lightbox]");
-      if (trig) {
-        e.preventDefault();
-        var src = trig.getAttribute("data-lightbox");
-        var type = trig.getAttribute("data-lb-type") || "image";
-        if (type === "video") openLB('<video src="' + src + '" controls autoplay muted loop playsinline></video>');
-        else openLB('<img src="' + src + '" alt="">');
-        return;
-      }
+      if (trig && !lb.contains(trig)) { e.preventDefault(); openLB(trig); return; }
+      if (e.target.closest(".lightbox__prev")) { show(idx - 1); return; }
+      if (e.target.closest(".lightbox__next")) { show(idx + 1); return; }
       if (e.target.closest(".lightbox__close") || e.target === lb) closeLB();
     });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeLB(); });
+    document.addEventListener("keydown", function (e) {
+      if (!lb.classList.contains("open")) return;
+      if (e.key === "Escape") closeLB();
+      else if (e.key === "ArrowLeft") show(idx - 1);
+      else if (e.key === "ArrowRight") show(idx + 1);
+    });
   }
 
   /* ----- Hero particle network -------------------------------------------- */

@@ -9,7 +9,7 @@
   <main id="main">
     <section class="page-hero">
       <div class="container" style="max-width:900px">
-        <p class="eyebrow" style="color:var(--teal-300)">{{ page.journal }}{% if page.volume %} · {{ page.volume }}{% endif %} · {{ page.date | date: "%Y" }}</p>
+        <p class="eyebrow" style="color:var(--teal-300)">{{ page.journal }}{% if page.volume %} · {{ page.volume }}{% endif %}{% if page.status %} · {{ page.status }}{% endif %} · {{ page.date | date: "%Y" }}</p>
         <h1 style="font-size:clamp(1.7rem,4vw,2.5rem)">{{ page.title }}</h1>
         <p style="margin-top:.6rem">
           {% assign authors = page.author | split: ", " %}

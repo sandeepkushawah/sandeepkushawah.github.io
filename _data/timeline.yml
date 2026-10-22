@@ -2,6 +2,11 @@
 # education, research, publication, award, talk, service
 - year: "2026"
   type: publication
+  title: "Paper accepted in Soft Matter"
+  place: "Royal Society of Chemistry · October 2026"
+  desc: "“Breakdown of Stokes–Einstein–Debye relations at the gas–supercooled liquid coexistence” — with D. Chakraborty, M. Rana and P. P. Jose."
+- year: "2026"
+  type: publication
   title: "First-author paper in Soft Matter"
   place: "Royal Society of Chemistry"
   desc: "“Beyond Pair Entropy: Orientational Many-Body Correlations…” — first &amp; corresponding author."
@@ -9,7 +14,7 @@
   type: education
   title: "Ph.D. in Physics — thesis submission Oct 2026"
   place: "IIT Mandi · Advisor: Dr. Prasanth P. Jose"
-  desc: "Thesis on static and dynamic correlations in Kob–Andersen glass-forming mixtures. Synopsis seminar on 1 October 2026."
+  desc: "Thesis on static and dynamic correlations in Kob–Andersen glass-forming mixtures. Synopsis seminar presented on 1 October 2026."
 - year: "2026"
   type: talk
   title: "Open Seminars I &amp; II"

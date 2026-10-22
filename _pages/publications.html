@@ -21,7 +21,7 @@ description: "Publications by Sandeep Kushawah on the glass transition, structur
   {% if items.size > 0 %}
     <h2 class="pub-cat">{{ site.publication_category[cat].title }}</h2>
     {% for pub in items %}
-      <article class="pub reveal">
+      <article class="pub reveal{% unless pub.image %} pub--noimg{% endunless %}">
         {% if pub.image %}
         <a class="pub__media" href="#" data-lightbox="{{ base_path }}{{ pub.image }}" aria-label="Enlarge figure for {{ pub.title }}">
           <img loading="lazy" src="{{ base_path }}{{ pub.image }}" alt="Graphical abstract for {{ pub.title }}">
@@ -30,6 +30,7 @@ description: "Publications by Sandeep Kushawah on the glass transition, structur
         <div class="pub__body">
           <div class="pub__meta">
             <span class="pub__journal">{{ pub.journal }}{% if pub.volume %} · {{ pub.volume }}{% endif %} · {{ pub.date | date: "%Y" }}</span>
+            {% if pub.status %}<span class="pub__badge pub__badge--new">{{ pub.status }}</span>{% endif %}
             {% if pub.corresponding %}<span class="pub__badge">First &amp; corresponding author</span>{% endif %}
           </div>
           <h3 class="pub__title">{{ pub.title }}</h3>

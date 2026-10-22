@@ -21,6 +21,8 @@
           <a href="https://{{ site.goatcounter_code }}.goatcounter.com" target="_blank" rel="noopener" title="Site statistics (privacy-friendly)">
             <span id="visit-count" data-goatcounter-visits>·</span> visits
           </a> ·
+        {% elsif site.visitor_counter.namespace %}
+          <span class="visits" title="Visits to this site (counted once per browser session)"><i class="ti ti-eye" aria-hidden="true"></i> <span data-visits>…</span> visits</span> ·
         {% endif %}
         <a href="{{ base_path }}/sitemap.xml">Sitemap</a> ·
         <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID {{ site.author.orcid }}</a>
@@ -32,10 +34,35 @@
 <!-- Lightbox -->
 <div class="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
   <button class="lightbox__close" aria-label="Close">&times;</button>
+  <button class="lightbox__prev" aria-label="Previous"><i class="ti ti-chevron-left" aria-hidden="true"></i></button>
+  <button class="lightbox__next" aria-label="Next"><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
   <div class="lightbox__content"></div>
 </div>
 
 <script src="{{ base_path }}/assets/js/site.js?v={{ site.time | date: '%s' }}" defer></script>
+
+{% if site.goatcounter_code == blank and site.visitor_counter.namespace %}
+<!-- Visitor counter: Abacus (free, no account, no cookies). Counts one visit per browser session. -->
+<script>
+  (function () {
+    var el = document.querySelector("[data-visits]");
+    if (!el) return;
+    var base = "https://abacus.jasoncameron.dev/";
+    var path = "{{ site.visitor_counter.namespace }}/{{ site.visitor_counter.key | default: 'visits' }}";
+    var counted = false;
+    try { counted = sessionStorage.getItem("skn-visit-counted") === "1"; } catch (e) {}
+    fetch(base + (counted ? "get/" : "hit/") + path)
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d && typeof d.value === "number") {
+          el.textContent = d.value.toLocaleString("en-IN");
+          try { sessionStorage.setItem("skn-visit-counted", "1"); } catch (e) {}
+        } else { el.parentNode.style.display = "none"; }
+      })
+      .catch(function () { el.parentNode.style.display = "none"; });
+  })();
+</script>
+{% endif %}
 
 {% if site.goatcounter_code != blank %}
 <!-- GoatCounter: privacy-friendly, cookieless analytics -->

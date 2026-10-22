@@ -22,6 +22,13 @@ repository               : "sandeepkushawah/sandeepkushawah.github.io"
 # if your dashboard is sandeepkushawah.goatcounter.com). Leave blank to disable.
 goatcounter_code         : ""
 
+# Built-in visitor counter (used when goatcounter_code is blank). Uses the free
+# Abacus counting API (abacus.jasoncameron.dev): no account, no cookies, one count
+# per browser session. Remove the namespace to hide the counter.
+visitor_counter:
+  namespace              : "sandeepkushawah-github-io"
+  key                    : "visits"
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html

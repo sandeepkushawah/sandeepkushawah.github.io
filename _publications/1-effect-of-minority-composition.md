@@ -7,7 +7,8 @@ me: "Sandeep Kushawah"
 date: 2025-01-28
 journal: "AIP Conference Proceedings"
 volume: "3198 (1), 020050"
-paperurl: "https://pubs.aip.org/aip/acp/article/3198/1/020050/3332705/Effect-of-minority-composition-in-a-binary-glass"
+paperurl: "https://doi.org/10.1063/5.0248436"
+doi: "10.1063/5.0248436"
 image: "/images/fig1_glass_states.png"
 highlights:
   - "Examines how the concentration of the minority species reshapes the glass transition in a binary mixture."
@@ -21,6 +22,7 @@ bibtex: |
     number    = {1},
     pages     = {020050},
     year      = {2025},
+    doi       = {10.1063/5.0248436},
     publisher = {AIP Publishing}
   }
 citation: 'Sandeep Kushawah, Shubhanjali Pathak, Prasanth P. Jose. (2025). &quot;Effect of Minority Composition in a Binary Glass-Forming Liquid.&quot; <i>AIP Conference Proceedings</i>, 3198(1), 020050.'

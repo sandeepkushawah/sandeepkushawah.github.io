@@ -43,8 +43,9 @@
   <section class="section" id="stats" style="padding-top:clamp(2.5rem,6vw,4rem);padding-bottom:0;">
     <div class="container">
       <div class="stats reveal">
-        <div class="stat"><div class="stat__num" data-count="3">0</div><div class="stat__label">Publications</div></div>
-        <div class="stat"><div class="stat__num" data-count="1">0</div><div class="stat__label">First-author paper</div></div>
+        {% assign n_first = 0 %}{% for pub in site.publications %}{% assign first = pub.author | split: ", " | first %}{% if first == pub.me %}{% assign n_first = n_first | plus: 1 %}{% endif %}{% endfor %}
+        <div class="stat"><div class="stat__num" data-count="{{ site.publications | size }}">0</div><div class="stat__label">Publications</div></div>
+        <div class="stat"><div class="stat__num" data-count="{{ n_first }}">0</div><div class="stat__label">First-author papers</div></div>
         <div class="stat"><div class="stat__num" data-count="5">0</div><div class="stat__label">Conferences &amp; schools</div></div>
         <div class="stat"><div class="stat__num" data-count="5" data-suffix="+">0</div><div class="stat__label">Years HPC computing</div></div>
       </div>

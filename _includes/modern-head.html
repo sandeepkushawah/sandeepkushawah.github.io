@@ -6,7 +6,7 @@
 {% capture page_title %}{% if page.title != blank %}{{ page.title }} · {{ site.author.name }}{% else %}{{ site.author.name }} — {{ site.description }}{% endif %}{% endcapture %}
 {% capture page_desc %}{% if page.description %}{{ page.description }}{% else %}{{ site.author.name }}, {{ site.author.bio | strip }}{% endif %}{% endcapture %}
 {% capture page_url %}{{ site.url }}{{ page.url }}{% endcapture %}
-{% capture og_image %}{{ site.url }}/images/{% if page.header.og_image %}{{ page.header.og_image }}{% else %}profile.jpg{% endif %}{% endcapture %}
+{% capture og_image %}{% if page.header.og_image %}{{ site.url }}/images/{{ page.header.og_image }}{% elsif page.image and page.collection != 'posts' %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/images/og-card.jpg{% endif %}{% endcapture %}
 
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_desc | strip_newlines | truncate: 300 }}">
@@ -20,6 +20,7 @@
 <meta property="og:description" content="{{ page_desc | strip_newlines | truncate: 300 }}">
 <meta property="og:url" content="{{ page_url }}">
 <meta property="og:image" content="{{ og_image }}">
+<meta property="og:image:alt" content="{{ page_title | strip | escape }}">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
