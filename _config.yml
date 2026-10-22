@@ -191,6 +191,8 @@ exclude:
   - talkmap.py
   - "*.ipynb"
   - SETUP-REDESIGN.md
+  - CLAUDE.md
+  - cv
   - CONTRIBUTING.md
   - README.md
   - deploy.sh
