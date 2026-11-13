@@ -1,9 +1,14 @@
 # Academic timeline (most recent first). type sets the icon:
 # education, research, publication, award, talk, service
 - year: "2026"
+  type: education
+  title: "Ph.D. thesis submitted"
+  place: "IIT Mandi · November 2026"
+  desc: "“A Study of Structural and Dynamical Inhomogeneities in Supercooled Glass-Forming Model Liquids” — advisor Dr. Prasanth P. Jose."
+- year: "2026"
   type: publication
-  title: "Paper accepted in Soft Matter"
-  place: "Royal Society of Chemistry · October 2026"
+  title: "Paper published in Soft Matter"
+  place: "Royal Society of Chemistry · November 2026"
   desc: "“Breakdown of Stokes–Einstein–Debye relations at the gas–supercooled liquid coexistence” — with D. Chakraborty, M. Rana and P. P. Jose."
 - year: "2026"
   type: publication
@@ -12,9 +17,9 @@
   desc: "“Beyond Pair Entropy: Orientational Many-Body Correlations…” — first &amp; corresponding author."
 - year: "2026"
   type: education
-  title: "Ph.D. in Physics — thesis submission Oct 2026"
-  place: "IIT Mandi · Advisor: Dr. Prasanth P. Jose"
-  desc: "Thesis on static and dynamic correlations in Kob–Andersen glass-forming mixtures. Synopsis seminar presented on 1 October 2026."
+  title: "Thesis synopsis seminar"
+  place: "IIT Mandi · 1 October 2026"
+  desc: "Structural and dynamical inhomogeneities in Kob–Andersen glass-forming mixtures."
 - year: "2026"
   type: talk
   title: "Open Seminars I &amp; II"

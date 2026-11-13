@@ -18,7 +18,7 @@ description: "Curriculum vitae of Sandeep Kushawah — education, research exper
 </div>
 
 <div class="prose" style="max-width:760px;margin-bottom:3rem">
-  <p>I am a computational soft-matter physicist finishing my Ph.D. at IIT Mandi. My research uses large-scale molecular dynamics simulations to characterise structure–dynamics relationships in supercooled glass-forming liquids — developing structural and orientational order parameters, configurational/structural entropy measures, and static and dynamic correlation lengths that connect local packing to slow, heterogeneous dynamics in model binary mixtures near the glass transition.</p>
+  <p>I am a computational soft-matter physicist and have just submitted my Ph.D. thesis at IIT Mandi. My research uses large-scale molecular dynamics simulations to characterise structure–dynamics relationships in supercooled glass-forming liquids — developing structural and orientational order parameters, configurational/structural entropy measures, and static and dynamic correlation lengths that connect local packing to slow, heterogeneous dynamics in model binary mixtures near the glass transition.</p>
 </div>
 
 <h2 class="section-title" style="font-size:1.7rem;margin-bottom:1.6rem"><i class="ti ti-timeline" aria-hidden="true" style="color:var(--accent)"></i> Academic timeline</h2>
@@ -41,9 +41,9 @@ description: "Curriculum vitae of Sandeep Kushawah — education, research exper
   <div class="cv-block">
     <h2><i class="ti ti-school" aria-hidden="true"></i> Education</h2>
     <div class="cv-entry">
-      <div class="cv-entry__top"><p class="cv-entry__title">Ph.D. in Physics (thesis submission Oct 2026)</p><span class="cv-entry__date">Since 2021</span></div>
+      <div class="cv-entry__top"><p class="cv-entry__title">Ph.D. in Physics (thesis submitted Nov 2026)</p><span class="cv-entry__date">Since 2021</span></div>
       <p class="cv-entry__org">Indian Institute of Technology Mandi</p>
-      <ul><li>Advisor: Dr. Prasanth P. Jose. Static and dynamic correlations in Kob–Andersen glass-forming mixtures via molecular dynamics simulation.</li><li>Coursework CGPA 8.0/10.</li></ul>
+      <ul><li>Thesis: <em>A Study of Structural and Dynamical Inhomogeneities in Supercooled Glass-Forming Model Liquids</em> (submitted November 2026). Advisor: Dr. Prasanth P. Jose.</li><li>Coursework CGPA 8.0/10.</li></ul>
     </div>
     <div class="cv-entry">
       <div class="cv-entry__top"><p class="cv-entry__title">M.Sc. in Physics</p><span class="cv-entry__date">2017–2019</span></div>

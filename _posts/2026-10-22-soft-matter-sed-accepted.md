@@ -15,4 +15,6 @@ Our paper **"Breakdown of Stokes–Einstein–Debye relations at the gas–super
 
 The Stokes–Einstein and Stokes–Einstein–Debye relations connect how fast molecules diffuse and rotate to the viscosity, or structural relaxation time, of the liquid around them. In supercooled liquids these relations are known to break down. This work examines that breakdown when the supercooled liquid coexists with its gas phase.
 
-This is my second paper in *Soft Matter* this year, after [Beyond Pair Entropy](/publications/3-beyond-pair-entropy/). The DOI and article link will be added on the [publications page](/publications/) once the paper is online.
+**Update, November 2026:** the paper is now published online — [doi:10.1039/D6SM00374E](https://doi.org/10.1039/D6SM00374E).
+
+This is my second paper in *Soft Matter* this year, after [Beyond Pair Entropy](/publications/3-beyond-pair-entropy/).

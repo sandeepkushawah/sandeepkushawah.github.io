@@ -2,7 +2,7 @@
 layout: page-modern
 title: "Contact"
 eyebrow: "Get in touch"
-subtitle: "I'm finishing my Ph.D. in 2026 and looking for postdoctoral positions in computational soft matter, statistical physics, and materials modelling. I'd be glad to hear from potential collaborators and hiring committees."
+subtitle: "I've submitted my Ph.D. thesis (November 2026) and am looking for postdoctoral positions in computational soft matter, statistical physics, and materials modelling. I'd be glad to hear from potential collaborators and hiring committees."
 permalink: /contact/
 description: "Contact Sandeep Kushawah — email, Google Scholar, ORCID, GitHub, LinkedIn, and location at IIT Mandi."
 ---
