@@ -1,0 +1,22 @@
+name: verify-build
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/jekyll-build-pages@v1
+        with: { source: ./, destination: ./_site, verbose: true }
+      - name: Inspect output
+        run: |
+          set -x
+          sudo chown -R $USER _site || true
+          ls _site _site/talks _site/portfolio
+          head -c 300 _site/robots.txt; echo
+          grep -c "<url>" _site/sitemap.xml
+          grep -o 'citation_doi" content="[^"]*' _site/publications/4-stokes-einstein-debye-breakdown/index.html
+          grep -o '<h3 class="talk__title"><a href="[^"]*">[^<]*' _site/talks/index.html
+          grep -c 'class="gcard"' _site/gallery/index.html
+          test ! -e _site/assets/css/main.css
+          grep -o 'data-count="[0-9]*"' _site/index.html
+          grep -o '<title>[^<]*' _site/404.html
