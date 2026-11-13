@@ -1,262 +1,58 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
+# Site configuration for sandeepkushawah.github.io (Jekyll on GitHub Pages).
+# Restart `jekyll serve` after editing this file. Maintenance notes: CLAUDE.md.
 
-# Basic Site Settings
+# ---------------------------------------------------------------- Site
 locale                   : "en-US"
-site_theme               : "default"
 title                    : "Sandeep Kushawah"
-title_separator          : "-"
-name                     : &name "Sandeep Kushawah"
-description              : &description "Computational Soft Matter Physicist"
-url                      : https://sandeepkushawah.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+description              : "Computational Soft Matter Physicist"
+url                      : "https://sandeepkushawah.github.io"
+baseurl                  : ""
 repository               : "sandeepkushawah/sandeepkushawah.github.io"
+timezone                 : Asia/Kolkata
+future                   : true
 
-# Privacy-friendly visitor analytics (GoatCounter). Create a free account at
-# https://www.goatcounter.com/ and put your site code here (e.g. "sandeepkushawah"
-# if your dashboard is sandeepkushawah.goatcounter.com). Leave blank to disable.
-goatcounter_code         : ""
-
-# Built-in visitor counter (used when goatcounter_code is blank). Uses the free
-# Abacus counting API (abacus.jasoncameron.dev): no account, no cookies, one count
-# per browser session. Remove the namespace to hide the counter.
-visitor_counter:
-  namespace              : "sandeepkushawah-github-io"
-  key                    : "visits"
-
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+# ---------------------------------------------------------------- Author
+# Used in the page header/footer, contact page, CV page and search metadata.
 author:
-  # Biographic information
-  avatar           : "profile.jpg"
   name             : "Sandeep Kushawah"
-  pronouns         : # example: "she/her"  
   bio              : "I have submitted my Ph.D. thesis at IIT Mandi on the glass transition in supercooled liquids, studied with molecular dynamics simulations."
   location         : "India"
   employer         : "Indian Institute of Technology Mandi"
-  uri              : # URL
   email            : "sandeep.kushawah@outlook.com"
-
-  # Academic websites
-  arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=2SUAJIwAAAAJ&hl=en"
-  impactstory      : # URL
   orcid            : "0009-0003-5052-4398"
-  semantic         : # URL
-  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
-
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
   github           : "sandeepkushawah"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  linkedin         : "sandeep-kushawah"
 
-  # Social media
-  bluesky          : #"bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : skushawah31
-  lastfm           : # Username
-  linkedin         : sandeep-kushawah
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+# ---------------------------------------------------------------- Visitor counter
+# Footer visit counter via the free Abacus API (no account, no cookies, one count
+# per browser session). Remove the namespace to hide it. If you create a
+# GoatCounter account (goatcounter.com), put its site code in goatcounter_code
+# and the footer switches to GoatCounter instead.
+visitor_counter:
+  namespace              : "sandeepkushawah-github-io"
+  key                    : "visits"
+goatcounter_code         : ""
 
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
-
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
-
-
-# SEO Related
+# ---------------------------------------------------------------- Search engines
+# Google Search Console: add the property "https://sandeepkushawah.github.io/",
+# choose the "HTML tag" verification method and paste ONLY the content="..." value
+# below, e.g.  google_site_verification : "AbCdEf123..."
+# After verifying, submit https://sandeepkushawah.github.io/sitemap.xml there.
 google_site_verification :
 bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
 
+# ---------------------------------------------------------------- Publications
+publication_category:
+  manuscripts:
+    title: 'Journal Articles'
+  conferences:
+    title: 'Conference Papers'
+  books:
+    title: 'Books'
 
-# Social Sharing
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-
-# Analytics
-analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          :
-
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-  - files
-exclude:
-  - "preview-*.html"
-  # Leftover academicpages template pages/tools (kept in the repo for reference,
-  # but not published or listed in the sitemap)
-  - _pages/markdown.md
-  - _pages/archive-layout-with-content.md
-  - _pages/non-menu-page.md
-  - _pages/terms.md
-  - _pages/sitemap.md
-  - _pages/year-archive.html
-  - _pages/category-archive.html
-  - _pages/tag-archive.html
-  - _pages/collection-archive.html
-  - _pages/page-archive.html
-  - _pages/talkmap.html
-  - _pages/teaching.html
-  - _drafts
-  - markdown_generator
-  - talkmap
-  - talkmap.py
-  - "*.ipynb"
-  - SETUP-REDESIGN.md
-  - CLAUDE.md
-  - cv
-  - CONTRIBUTING.md
-  - README.md
-  - deploy.sh
-  - deploy.ps1
-  - docker-compose.yaml
-  - _config_docker.yml
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# These settings control the types of collections used by the template
+# ---------------------------------------------------------------- Content
 collections:
-  teaching:
-    output: false
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -267,118 +63,55 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-
-# These settings control how pages and collections are included in the site
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: publication
-      author_profile: false
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: portfolio
-      author_profile: false
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: false
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "", type: pages }
+    values: { layout: page-modern }
+  - scope: { path: "", type: publications }
+    values: { layout: publication }
+  - scope: { path: "", type: portfolio }
+    values: { layout: portfolio }
+  - scope: { path: "", type: talks }
+    values: { layout: talk }
 
+include:
+  - _pages
+  - files
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+exclude:
+  - CLAUDE.md
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - cv
+  - deploy.sh
+  - deploy.ps1
+  - "preview-*.html"
+  - .github
+  - .jekyll-cache
+  - .sass-cache
+  - node_modules
+  - vendor
 
+# ---------------------------------------------------------------- Markdown
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "\n\n"
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
 
-# Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
-# Plugins
+# ---------------------------------------------------------------- Plugins (all supported by GitHub Pages)
 plugins:
   - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
 
-# Mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+feed:
+  path: feed.xml

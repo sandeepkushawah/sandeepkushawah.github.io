@@ -30,6 +30,11 @@ Keep the CV to 2 pages; check with `pdfinfo`.
 - CV web page: `_pages/cv.md` (publication list there is generated automatically)
 - Visitor counter: `visitor_counter` in `_config.yml` (Abacus API); set
   `goatcounter_code` instead if a GoatCounter account is created.
+- Search Console: `google_site_verification` in `_config.yml` (meta tag is
+  emitted by `_includes/modern-head.html`).
+- The old academicpages template files were removed in Nov 2026; only the
+  "modern" layouts/includes listed above are used. `robots.txt` has
+  `layout: null` (pages default to `page-modern`).
 
 ## Conventions
 

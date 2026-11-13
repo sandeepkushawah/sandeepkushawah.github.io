@@ -9,6 +9,7 @@ journal: "Soft Matter"
 volume: "Advance Article"
 paperurl: "https://doi.org/10.1039/D6SM00374E"
 doi: "10.1039/D6SM00374E"
+image: "/images/sed/slab_schematic.jpg"
 highlights:
   - "Separates the two mechanisms behind the breakdown of Stokes–Einstein–Debye relations: translational–rotational decoupling and failure of the Debye rotational-diffusion model."
   - "Molecular dynamics of a binary mixture of FENE-bonded dumbbells, with a dense liquid slab coexisting with a dilute vapour formed by cavitation at ρ = 0.8."

@@ -1,10 +1,10 @@
 ---
 layout: page-modern
 title: "Talks &amp; Presentations"
-eyebrow: "Conferences &amp; symposia"
-subtitle: "Poster presentations and talks at national symposia and schools on the statistical physics of the glass transition."
+eyebrow: "Seminars, conferences &amp; symposia"
+subtitle: "Seminars, poster presentations and talks on the statistical physics of the glass transition."
 permalink: /talks/
-description: "Talks and poster presentations by Sandeep Kushawah at DAE Solid State Physics Symposia and statistical physics schools."
+description: "Seminars, talks and poster presentations by Sandeep Kushawah — IIT Mandi seminars, COMPFLU 2025 and DAE Solid State Physics Symposia."
 ---
 
 {% include base_path %}
@@ -17,7 +17,7 @@ description: "Talks and poster presentations by Sandeep Kushawah at DAE Solid St
   </div>
   <div class="talk__body">
     {% if talk.type %}<span class="talk__type">{{ talk.type }}</span>{% endif %}
-    <h3 class="talk__title">{{ talk.title }}</h3>
+    <h3 class="talk__title"><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
     {% if talk.venue %}<p class="talk__venue">{{ talk.venue }}</p>{% endif %}
     {% if talk.location %}<p class="talk__loc"><i class="ti ti-map-pin" aria-hidden="true"></i> {{ talk.location }}</p>{% endif %}
   </div>

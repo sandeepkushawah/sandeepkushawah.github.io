@@ -144,6 +144,7 @@ description: "Curriculum vitae of Sandeep Kushawah — education, research exper
   <div class="cv-block">
     <h2><i class="ti ti-presentation" aria-hidden="true"></i> Selected presentations &amp; schools</h2>
     <ul class="cv-awards">
+      <li><i class="ti ti-point-filled" aria-hidden="true"></i> Seminars, IIT Mandi — Thesis Synopsis Seminar (1 Oct 2026); Open Seminars on four-point structural entropy (2 Jul 2026) and on clusters and strings in glass-forming liquids (4 Aug 2026). <a href="{{ base_path }}/talks/">All talks</a></li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Poster, COMPFLU 2025, IISc Bangalore, Dec 2025 — “Temperature-dependent string-like cooperative motions in Kob–Andersen binary mixtures” (session: Conventional and Ultrastable Glasses).</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> “Computation and Modeling for Complex Fluids” Pre-conference Workshop (COMPFLU 2025), IISc Bangalore, 13–14 Dec 2025 (selected participant).</li>
       <li><i class="ti ti-point-filled" aria-hidden="true"></i> Poster, 68th DAE Solid State Physics Symposium, BARC, Mumbai.</li>
